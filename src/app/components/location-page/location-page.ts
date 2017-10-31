@@ -5,7 +5,7 @@ import { AgmMap, AgmMarker } from '@agm/core';
     templateUrl: './location-page.html',
     styles: ['ul { color: blue; }'],
     styleUrls: ['./style.css'],
-    directives: [AgmMap]
+
 })
 export class LocationComponent implements OnInit{
 
