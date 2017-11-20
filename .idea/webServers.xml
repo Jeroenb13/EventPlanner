@@ -3,10 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="bcb58584-9034-4ad6-bbb0-d979e8af233e" name="inf2j" url="http://inf2j.aryoco.nl">
-        <fileTransfer host="aryoco.nl" port="">
+        <fileTransfer host="aryoco.nl" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
+          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
     </option>
