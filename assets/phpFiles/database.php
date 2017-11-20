@@ -7,6 +7,6 @@ try {
     $db = new PDO($dsn, $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
-    $die('Could not connect to the database:<br/>' . $e);
+    die('Could not connect to the database:<br/>' . $e);
 }
 ?>

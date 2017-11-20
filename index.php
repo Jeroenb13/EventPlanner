@@ -1,6 +1,6 @@
 <?php
 session_start();
-require ('src/phpFiles/database.php');
+require('assets/phpFiles/database.php');
 if(isset($_GET['page']))
 {
     $page = $_GET['page'];
@@ -9,16 +9,16 @@ if(isset($_GET['page']))
 }
 ?>
 
-<?php   require ('src/style/header.php');?>
+<?php   require('assets/phpFiles/header.php');?>
 <div id="container">
     <div id="content">
         <?php
         if(file_exists("pages/$page.php"))
         {
-            require ("src/pages/$page.php");
+            require("assets/pages/$page.php");
         }else{
-            echo "<img class='img-responsive center-block' src='src/img/404.png' alt='page not found'>";
+            echo "<img class='images-responsive center-block' src='assets/images/404.png' alt='page not found'>";
         }
         ?>
     </div></div>
-<?php require ('src/style/footer.php');?>
+<?php require('assets/phpFiles/footer.php');?>
