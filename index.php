@@ -1,22 +1,24 @@
-<!DOCTYPE html>
 <?php
-    include "src/phpFiles/inc_connect.php";
+session_start();
+require ('src/phpFiles/database.php');
+if(isset($_GET['page']))
+{
+    $page = $_GET['page'];
+}else{
+    $page = "home";
+}
 ?>
 
-<html>
-    <head>
-        <title>EventPlanner van de gemeente</title>
-        <link rel="stylesheet" href="src/style/styleMain.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="src/scripts/main.js"></script>
-
-    </head>
-    <body>
-
-        <div id="Container">
-
-        </div>
-    </body>
-</html>
+<?php   require ('src/style/header.php');?>
+<div id="container">
+    <div id="content">
+        <?php
+        if(file_exists("pages/$page.php"))
+        {
+            require ("src/pages/$page.php");
+        }else{
+            echo "<img class='img-responsive center-block' src='src/img/404.png' alt='page not found'>";
+        }
+        ?>
+    </div></div>
+<?php require ('src/style/footer.php');?>
