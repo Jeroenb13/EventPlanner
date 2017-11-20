@@ -1,4 +1,6 @@
-
+<div id="legend">
+    <h3>Legend</h3>
+</div>
 
 <style>
     /* Always set the map height explicitly to define the size of the div
@@ -48,6 +50,17 @@
                 map: map
             });
         });
+
+        var legend = document.getElementById('legend');
+        for (var key in icons) {
+            var type = icons[key];
+            var name = type.name;
+            var icon = type.icon;
+            var div = document.createElement('div');
+            div.innerHTML = '<img src="' + icon + '"> ' + name;
+            legend.appendChild(div);
+        }
+
 
 
     }
