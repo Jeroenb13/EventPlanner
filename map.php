@@ -1,11 +1,61 @@
 
-<script>$(function)
 
-</script
+<style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+        height: 640px;
+        width: 640px;
 
-<img src="https://geo.emmen.nl:443/geoserver/ows?SERVICE=WMS&amp;REQUEST=GetMap
-    &amp;FORMAT=image/png&amp;TRANSPARENT=TRUE
-    &amp;STYLES=&amp;VERSION=1.3.0
-    &amp;LAYERS=topp:O10002_gs_evenement_vuilwaterput,topp:O10002_gs_evenementen_aansluitingen
-    &amp;WIDTH=800&amp;HEIGHT=500&amp;CRS=EPSG:3857
-    &amp;BBOX=766777.3793664654,6942925.350190463,767923.9347909002,6943466.9781956505"> 
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<div id="map"></div>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 52.783001, lng: 6.892503},
+            zoom: 16
+        });
+        var iconBase = 'src/img/iconMap/';
+        var icons = {
+            energy: {
+                name: 'Energy',
+                icon: iconBase + 'bolt.png'
+            },
+            water: {
+                name: 'Water',
+                icon: iconBase + 'faucet.png'
+            }
+        };
+
+        var features = [
+            {
+                position: new google.maps.LatLng(52.783001, 6.892503),
+                type: 'energy'
+            }
+        ];
+
+        features.forEach(function (feature) {
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon : icons[feature.type].icon,
+                map: map
+            });
+        });
+
+
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZHKVcs3VGPaxnuiQNFjOKL741xKu_vag&callback=initMap"
+        async defer></script>
+
+<script>
+    //AIzaSyBZHKVcs3VGPaxnuiQNFjOKL741xKu_vag api sleutel voor googlemaps
+</script>
