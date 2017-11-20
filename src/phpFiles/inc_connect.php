@@ -18,7 +18,6 @@ if ($DBConnect === False)
         $DBConnect = FALSE;
     } else
     {
-
     }
 }
 ?>

@@ -16,6 +16,5 @@
         <div id="Container">
 
         </div>
-        <p>Hello World!</p>
     </body>
 </html>
