@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by IntelliJ IDEA.
- * User: Jeroen
- * Date: 20-11-2017
- * Time: 10:18
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EventPlanner van de gemeente</title>
+    <link rel="stylesheet" href="src/style/styleMain.css"
+</head>
+<body>
+    <p>Hello World!</p>
+</body>
+</html>
