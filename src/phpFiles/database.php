@@ -1,23 +1,12 @@
 <?php
+$dsn = "mysql:dbname=eventplanner;host=localhost;port=3306;charset=UTF8";
+$username="aryocon_inf2j";
+$password="geefbier";
 
-//connectie voor de Database
-$DBName = "eventplanner";
-$DBConnect = mysqli_connect("localhost", "root");
-if ($DBConnect === False)
-{
-    echo "<p>Unable to connect to the database server</p>";
-    echo "<p>Error Code" . mysqli_errno() . ": " . mysqli_error() . "</p>";
-} else
-{
-    $db = mysqli_select_db($DBConnect, $DBName);
-    if ($db === FALSE)
-    {
-        echo "<p>unable to connect to the database server</p>";
-        echo "<p>error code" . mysqli_errno() . ": " . mysqli_error() . "</p>";
-        mysqli_close($DBConnect);
-        $DBConnect = FALSE;
-    } else
-    {
-    }
+try {
+    $db = new PDO($dsn, $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    $die('Could not connect to the database:<br/>' . $e);
 }
 ?>
