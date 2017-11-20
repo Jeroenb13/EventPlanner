@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="inf2j" uploadOnCheckin="bcb58584-9034-4ad6-bbb0-d979e8af233e">
+    <serverData>
+      <paths name="inf2j">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="inf2j" />
+  </component>
+</project>
