@@ -4,7 +4,6 @@
     <list default="true" id="d7e7e2ac-80b3-4f4a-99af-3965436338db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/phpFiles/header.php" afterPath="$PROJECT_DIR$/assets/phpFiles/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/phpFiles/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="261">
+              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -278,7 +277,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511193789593</updated>
       <workItem from="1511193790815" duration="700000" />
-      <workItem from="1511258628790" duration="4676000" />
+      <workItem from="1511258628790" duration="5234000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up files, corrected DB name">
       <created>1511258758689</created>
@@ -336,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511263048041</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added unstyled links to pages.">
+      <created>1511263896701</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511263896701</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5376000" />
+    <option name="totallyTimeSpent" value="5934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="0" />
@@ -381,7 +387,8 @@
     <MESSAGE value="Centered 404 image" />
     <MESSAGE value="Centered 404 image, made a small mistake in the last commit" />
     <MESSAGE value="edited index page, inserted check for titlebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited index page, inserted check for titlebar" />
+    <MESSAGE value="Added unstyled links to pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unstyled links to pages." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/phpFiles/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="261">
+          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding />
         </state>
       </provider>

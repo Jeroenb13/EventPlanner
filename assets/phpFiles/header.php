@@ -15,12 +15,14 @@ Inhoud:
 
     </head>
     <body>
-    <ul>
-        <li><a href="?page=home">Home</a></li>
-        <li><a href="?page=login">Login</a></li>
-        <li><a href="?page=form">Form</a></li>
-        <li><a href="?page=map">Kaart</a></li>
-        <li><a href="?page=404">page not found</a></li>
-    </ul>
+    <form method="get" action="">
+        <select name="page" onchange="this.form.submit()">
+            <option value="home" <?php if($page == "home"){echo "selected";}?>>Home</option>
+            <option value="login" <?php if($page == "login"){echo "selected";}?>>Login</option>
+            <option value="form" <?php if($page == "form"){echo "selected";}?>>Form</option>
+            <option value="map" <?php if($page == "map"){echo "selected";}?>>Kaart</option>
+            <option value="404" <?php if($page == "404"){echo "selected";}?>>Page not found</option>
+        </select>
+    </form>
 
         <div id="Container">
