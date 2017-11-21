@@ -7,7 +7,7 @@ if(isset($_GET['page']))
 }else{
     $page = "home";
 }require('assets/phpFiles/header.php');
-        if(file_exists("pages/$page.php"))
+        if(file_exists("assets/pages/$page.php"))
         {
             require("assets/pages/$page.php");
         }else{
