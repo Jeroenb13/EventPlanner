@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
-include "src/phpFiles/database.php";
-?>
-
 <html>
     <head>
         <title>EventPlanner van de gemeente</title>
