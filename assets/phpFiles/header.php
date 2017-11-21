@@ -6,7 +6,7 @@ Inhoud:
 -->
 <html>
     <head>
-        <title>Eventplanner - <?php echo $_GET["page"];?></title>
+        <title>Eventplanner - <?php echo $page;?></title>
         <link rel="stylesheet" href="assets/style/css/styleMain.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
