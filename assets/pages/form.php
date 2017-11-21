@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joey
- * Date: 21-11-17
- * Time: 11:25
- */
+<!--
+Inhoud:
+    voor elke faciliteit een form in te vullen,
+    na het invoeren van een nieuwe faciliteit wordt deze toegevoegd aan een overzichtelijke lijst
+        - Vragen/Mogelijkheden
+        - Submit per vraag/mogelijkheid
+-->

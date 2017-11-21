@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joey
- * Date: 21-11-17
- * Time: 11:24
- */
+<!--
+Inhoud:
+    - Login form
+        - Username
+        - Pass
+        - Submit
+        - Terug -> home (?page=home)
+-->

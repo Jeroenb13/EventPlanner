@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<!--
+Inhoud:
+    - Banner?
+    - Navigatiebalk
+-->
 <html>
     <head>
-        <title>EventPlanner van de gemeente</title>
+        <title>Eventplanner - <?php echo $_GET["page"];?></title>
         <link rel="stylesheet" href="assets/style/css/styleMain.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
