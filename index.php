@@ -11,7 +11,7 @@ if(isset($_GET['page']))
         {
             require("assets/pages/$page.php");
         }else{
-            echo "<img class='images-responsive center-block' src='assets/images/404.png' alt='page not found'>";
+            echo "<img class='center-block' src='assets/images/404.png' alt='page not found'>";
         }
 require('assets/phpFiles/footer.php');
         ?>
