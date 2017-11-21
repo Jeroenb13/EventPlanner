@@ -15,5 +15,12 @@ Inhoud:
 
     </head>
     <body>
+    <ul>
+        <li><a href="?page=home">Home</a></li>
+        <li><a href="?page=login">Login</a></li>
+        <li><a href="?page=form">Form</a></li>
+        <li><a href="?page=map">Kaart</a></li>
+        <li><a href="?page=404">page not found</a></li>
+    </ul>
 
         <div id="Container">

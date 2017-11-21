@@ -12,6 +12,5 @@ if(isset($_GET['page']))
 }
 require('assets/phpFiles/header.php');
 require("assets/pages/$page.php");
-
 require('assets/phpFiles/footer.php');
         ?>
