@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7e7e2ac-80b3-4f4a-99af-3965436338db" name="Default" comment="">
+    <list default="true" id="d7e7e2ac-80b3-4f4a-99af-3965436338db" name="Default" comment="Centered 404 image, now for realz">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/style/css/styleMain.css" afterPath="$PROJECT_DIR$/assets/style/css/styleMain.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="styleMain.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/style/css/styleMain.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="72">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -267,7 +266,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511193789593</updated>
       <workItem from="1511193790815" duration="700000" />
-      <workItem from="1511258628790" duration="2083000" />
+      <workItem from="1511258628790" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up files, corrected DB name">
       <created>1511258758689</created>
@@ -304,11 +303,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511260535894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Centered 404 image">
+      <created>1511260727304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511260727304</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2783000" />
+    <option name="totallyTimeSpent" value="3074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="0" />
@@ -346,7 +352,8 @@
     <MESSAGE value="homepages emptied, base page redirection structure finished" />
     <MESSAGE value="Base pages created, map page moved to central pages folder" />
     <MESSAGE value="Added explanation of needed content per page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added explanation of needed content per page" />
+    <MESSAGE value="Centered 404 image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centered 404 image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -441,14 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/phpFiles/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -457,10 +456,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/style/css/styleMain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="72">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
