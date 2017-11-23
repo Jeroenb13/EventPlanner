@@ -24,7 +24,7 @@
             center: {lat: 52.783001, lng: 6.892503},
             zoom: 16
         });
-        var iconBase = 'src/img/iconMap/';
+        var iconBase = 'assets/images/iconMap/';
         var icons = {
             energy: {
                 name: 'Energy',
