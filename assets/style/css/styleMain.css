@@ -1,3 +1,13 @@
+/* SUMMARY
+   - Main Style
+   - Home Style
+   - Map Style
+   - Login Style
+   - Form Style
+*/
+
+
+
 /* MAIN STYLE */
 *{
     margin: 0;
@@ -111,6 +121,12 @@ button:hover{
 @media (max-width: 400px) {
 
 }
+
+/* END OF MAIN STYLE */
+
+
+
+/* HOME STYLE */
 
 
 
