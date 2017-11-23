@@ -33,5 +33,3 @@ Inhoud:
     </form>
 
     <body>
-        <div id="container">
-            <div id="upperbar"></div>

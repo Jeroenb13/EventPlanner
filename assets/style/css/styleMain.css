@@ -67,10 +67,6 @@ p{
     margin-bottom: 100px;
 }
 
-.buttonDiv{
-    width: 100%;
-}
-
 button{
     float: none;
     margin-top: 25px;
@@ -128,9 +124,51 @@ button:hover{
 
 /* HOME STYLE */
 
+.buttonDiv{
+    width: 100%;
+    padding-bottom: 100px;
+}
 
+#container-plus{
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    -moz-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    text-align: center;
+}
 
+@media (max-width: 1200px) {
+    #container-plus{
+        width: 80%;
+    }
+}
 
+@media (max-width: 1000px) {
+    #container-plus{
+        width: 85%;
+    }
+}
+
+@media (max-width: 750px) {
+    #container-plus {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    #container-plus{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
+
+/* END OF HOME STYLE*/
 
 
 
