@@ -7,15 +7,16 @@ Inhoud:
 <html>
     <head>
         <title>Eventplanner - <?php echo $page;?></title>
+
         <link rel="stylesheet" href="assets/style/css/styleMain.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="src/scripts/main.js"></script>
 
     </head>
-    <body>
-    <form method="get" action="">
+    <form id="testoverlay" method="get" action="">
         <select name="page" onchange="this.form.submit()">
             <option value="home" <?php if($page == "home"){echo "selected";}?>>Home</option>
             <option value="login" <?php if($page == "login"){echo "selected";}?>>Login</option>
@@ -24,5 +25,6 @@ Inhoud:
             <option value="404" <?php if($page == "404"){echo "selected";}?>>Page not found</option>
         </select>
     </form>
-
-        <div id="Container">
+    <body>
+        <div id="container">
+            <div id="upperbar"></div>

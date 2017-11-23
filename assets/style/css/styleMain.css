@@ -1,6 +1,116 @@
-.center-block{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
+/* MAIN STYLE */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
+
+body{
+
+}
+
+#container{
+    width: 45%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    -moz-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    text-align: center;
+}
+
+/* TODO: Remove after project/nav is done */
+#testoverlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#upperbar{
+    height: 5px;
+    background-color: #23507d;
+}
+
+h1{
+    margin-top: 75px;
+    font-size: 5rem;
+    color: #001241;
+    font-weight: 100;
+    letter-spacing: -7px;
+}
+
+p{
+    font-size: 1rem;
+    color: #001241;
+}
+
+.paragraph{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 70%;
+    margin-bottom: 100px;
+}
+
+.buttonDiv{
+    width: 100%;
+}
+
+button{
+    float: none;
+    margin-top: 25px;
+    background-color: #23507d;
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 225px;
+
+}
+
+button:hover{
+    background-color: #1d3f62;
+    cursor: pointer;
+}
+
+.link{
+    font-weight: 200;
+    color: #001241;
+}
+@media (max-width: 1200px) {
+    #container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    #container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 550px) {
+    #container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
+
+
+
+
+
+
+
