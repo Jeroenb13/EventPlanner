@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<?php
-include "assets/phpFiles/database.php";
-?>
-
+<!--
+Inhoud:
+    - Banner?
+    - Navigatiebalk
+-->
 <html>
     <head>
-        <title>EventPlanner van de gemeente</title>
+        <title>Eventplanner - <?php echo $page;?></title>
         <link rel="stylesheet" href="assets/style/css/styleMain.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
@@ -14,5 +15,14 @@ include "assets/phpFiles/database.php";
 
     </head>
     <body>
+    <form method="get" action="">
+        <select name="page" onchange="this.form.submit()">
+            <option value="home" <?php if($page == "home"){echo "selected";}?>>Home</option>
+            <option value="login" <?php if($page == "login"){echo "selected";}?>>Login</option>
+            <option value="form" <?php if($page == "form"){echo "selected";}?>>Form</option>
+            <option value="map" <?php if($page == "map"){echo "selected";}?>>Kaart</option>
+            <option value="404" <?php if($page == "404"){echo "selected";}?>>Page not found</option>
+        </select>
+    </form>
 
         <div id="Container">
