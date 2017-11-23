@@ -4,3 +4,10 @@
     margin-right: auto;
     vertical-align: middle;
 }
+body{
+    background-image:url("../../images/bg/linksAchtergrond.png"), url("../../images/bg/rechtsAchtergrond.png");
+    background-repeat:no-repeat, no-repeat;
+    background-attachment:fixed, fixed;
+    background-position:left, right;
+    background-size: contain, contain;
+}
