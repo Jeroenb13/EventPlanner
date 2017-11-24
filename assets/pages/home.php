@@ -10,8 +10,8 @@ Inhoud:
 
     <div class="paragraph">
         <p>Maak een plattegrond voor het evenement dat
-            georganiseerd gaat worden door op <a class="link" href="#">start</a> te klikken.
-            Of klik op <a class="link" href="#">login</a> om een bestaand ontwerp aan te passen
+            georganiseerd gaat worden door op <a class="link" href="?page=form">start</a> te klikken.
+            Of klik op <a class="link" href="?page=login">login</a> om een bestaand ontwerp aan te passen
             of te bekijken.</p>
     </div>
 
