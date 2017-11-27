@@ -1,3 +1,13 @@
+/* SUMMARY
+   - Main Style
+   - Home Style
+   - Map Style
+   - Login Style
+   - Form Style
+*/
+
+
+
 /* MAIN STYLE */
 *{
     margin: 0;
@@ -7,7 +17,11 @@
 }
 
 body{
-
+    background-image: url("../../images/linksAchtergrond.png"), url("../../images/rechtsAchtergrond.png");
+    background-position: left, right;
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100%, auto 100%;
 }
 
 #container{
@@ -51,10 +65,6 @@ p{
     margin-top: 100px;
     max-width: 70%;
     margin-bottom: 100px;
-}
-
-.buttonDiv{
-    width: 100%;
 }
 
 button{
@@ -108,9 +118,57 @@ button:hover{
 
 }
 
+/* END OF MAIN STYLE */
 
 
 
+/* HOME STYLE */
+
+.buttonDiv{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#container-plus{
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    -moz-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #container-plus{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #container-plus{
+        width: 85%;
+    }
+}
+
+@media (max-width: 750px) {
+    #container-plus {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    #container-plus{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
+
+/* END OF HOME STYLE*/
 
 
 
