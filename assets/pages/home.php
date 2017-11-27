@@ -10,14 +10,14 @@ Inhoud:
 
     <div class="paragraph">
         <p>Maak een plattegrond voor het evenement dat
-            georganiseerd gaat worden door op <a class="link" href="?page=form">start</a> te klikken.
+            georganiseerd gaat worden door op <a class="link" href="?page=onderdelen">start</a> te klikken.
             Of klik op <a class="link" href="?page=login">login</a> om een bestaand ontwerp aan te passen
             of te bekijken.</p>
     </div>
 
     <div class="buttonDiv">
         <div class="button">
-            <a href="?page=form"><button>Start</button></a>
+            <a href="?page=onderdelen"><button>Start</button></a>
         </div>
 
         <div class="button">
