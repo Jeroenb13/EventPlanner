@@ -1,5 +1,6 @@
-/* SUMMARY
+/* INDEX:
    - Main Style
+   - Navigation Style
    - Home Style
    - Map Style
    - Login Style
@@ -13,7 +14,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
+}
+
+/* Chrome font-weight fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+*{font-weight: 400;}
 }
 
 body{
@@ -87,9 +94,17 @@ button:hover{
 }
 
 .link{
-    font-weight: 200;
+    font-weight: 400;
     color: #001241;
 }
+/* Chrome font-weight fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+    .link{
+        font-weight: 600;
+    }
+}
+
 @media (max-width: 1200px) {
     #container{
         width: 55%;
@@ -119,6 +134,77 @@ button:hover{
 }
 
 /* END OF MAIN STYLE */
+
+
+
+/* NAVIGATION STYLE */
+#nav{
+    height: 75px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d8d8d8;
+    padding-right: 100px;
+}
+#nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav > ul > li{
+    float: right;
+}
+
+#nav > ul > li > a{
+    font-size: 14pt;
+    color: #001241;
+    display: block;
+    text-align: center;
+    padding: 26px 20px;
+    text-decoration: none;
+}
+
+#nav > ul > li > a:first-of-type{
+    border-left: 1px solid #d8d8d8;
+}
+
+#nav > ul > li:first-child{
+    border-right: 1px solid #d8d8d8;
+}
+
+#nav > ul > li > a:hover {
+    background-color: #e2e2e2;
+}
+
+@media (max-width: 1200px) {
+    #container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    #container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 550px) {
+    #container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
+
+/* END OF NAVIGATION STYLE */
 
 
 
@@ -171,7 +257,8 @@ button:hover{
 /* END OF HOME STYLE*/
 
 
-/* Map style*/
+
+/* MAP STYLE */
 
 #map{
     height: 640px;
@@ -207,4 +294,6 @@ button:hover{
 @media (max-width: 400px) {
 
 }
+
+/* END OF MAP STYLE */
 
