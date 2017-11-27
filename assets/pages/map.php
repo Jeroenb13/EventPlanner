@@ -1,4 +1,4 @@
-
+<!-- MAP page-->
 <div id="container">
     <div id="upperbar"></div>
 
