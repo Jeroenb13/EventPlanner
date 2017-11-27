@@ -38,7 +38,28 @@
 
         var features = [
             {
-                position: new google.maps.LatLng(52.783001, 6.892503),
+                position: new google.maps.LatLng(52.783162, 6.891798),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(52.783142, 6.891870),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(52.781969, 6.892700),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(52.784146, 6.892832),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(52.783102, 6.892630),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(52.783000, 6.892600),
+                type: 'water'
+            }, {
+                position: new google.maps.LatLng(-33.91682, 151.23149),
+                type: 'energy'
+            }, {
+                position: new google.maps.LatLng(-33.91790, 151.23463),
                 type: 'energy'
             }
         ];
