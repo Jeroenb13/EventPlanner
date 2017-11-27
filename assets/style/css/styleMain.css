@@ -171,4 +171,40 @@ button:hover{
 /* END OF HOME STYLE*/
 
 
+/* Map style*/
+
+#map{
+    height: 640px;
+    width: 640px;
+    margin: 10px;
+}
+@media (max-width: 1200px) {
+    #map{
+        width: 80%;
+        margin-left:10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #map{
+        width: 90%;
+        margin-left:5%;
+    }
+}
+
+@media (max-width: 750px) {
+    #map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    #map{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
 

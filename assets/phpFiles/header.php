@@ -10,8 +10,6 @@ Inhoud:
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="assets/style/css/styleMain.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
 
