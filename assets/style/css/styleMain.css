@@ -2,9 +2,9 @@
    - Main Style
    - Navigation Style
    - Home Style
-   - Map Style
+   - Kaart Style
    - Login Style
-   - Form Style
+   - Onderdelen Style
 */
 
 
@@ -42,6 +42,11 @@ body{
     text-align: center;
 }
 
+#page-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* TODO: Remove after project/nav is done */
 #testoverlay{
     position: absolute;
@@ -60,6 +65,13 @@ h1{
     color: #001241;
     font-weight: 100;
     letter-spacing: -7px;
+}
+
+h2{
+    font-size: 18pt;
+    color: #001241;
+    font-weight: 100;
+    letter-spacing: -1px;
 }
 
 p{
@@ -258,7 +270,7 @@ and (min-resolution:.001dpcm) {
 
 
 
-/* MAP STYLE */
+/* KAART STYLE */
 
 #map{
     height: 640px;
@@ -295,5 +307,42 @@ and (min-resolution:.001dpcm) {
 
 }
 
-/* END OF MAP STYLE */
+/* END OF KAART STYLE */
 
+
+/* LOGIN STYLE */
+/* END OF LOGIN STYLE */
+
+
+
+/* ONDERDELEN STYLE */
+.buttonFloatLeft{
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+#onderdelenTabel {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#onderdelenTabel td, #onderdelenTabel th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#onderdelenTabel tr:nth-child(even){background-color: #f2f2f2;}
+
+#onderdelenTabel tr:hover {background-color: #e6e6e6;}
+
+#onderdelenTabel th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #23507d;
+    color: #ffffff;
+}
+
+/* END OF ONDERDELEN STYLE */
