@@ -1,5 +1,5 @@
 <!-- MAP page-->
-<div id="container">
+<div id="container-plus">
     <div id="upperbar"></div>
 
     <h1>Event Planner</h1>
@@ -20,8 +20,26 @@
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 52.783001, lng: 6.892503},
-                zoom: 16
+                zoom: 17
             });
+
+            var imageBounds = {
+                north: 52.864812,
+                west: 6.812500,
+                south: 52.627515,
+                east: 7.078402
+            };
+
+
+
+            EmmenOverlay = new google.maps.GroundOverlay(
+                'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg', imageBounds);
+            EmmenOverlay.setMap(map);
+            EmmenOverlay.setOpacity(0.5);
+
+
+
+
             var iconBase = 'assets/images/iconMap/';
             var icons = {
                 energy: {
@@ -53,12 +71,6 @@
                 }, {
                     position: new google.maps.LatLng(52.783000, 6.892600),
                     type: 'water'
-                }, {
-                    position: new google.maps.LatLng(-33.91682, 151.23149),
-                    type: 'energy'
-                }, {
-                    position: new google.maps.LatLng(-33.91790, 151.23463),
-                    type: 'energy'
                 }
             ];
 
@@ -79,9 +91,6 @@
                 div.innerHTML = '<img src="' + icon + '"> ' + name;
                 legend.appendChild(div);
             }
-
-
-
         }
 
     </script>
