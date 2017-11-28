@@ -139,6 +139,11 @@ and (min-resolution:.001dpcm) {
     #page-container{
         width: 95%;
     }
+    h1{
+        margin-top: 50px;
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -162,6 +167,7 @@ and (min-resolution:.001dpcm) {
     border-bottom: 1px solid #d8d8d8;
     padding-right: 100px;
 }
+
 #nav > ul{
     list-style-type: none;
     margin: 0;
@@ -216,10 +222,15 @@ and (min-resolution:.001dpcm) {
     #container{
         width: 100%;
     }
+    #nav{
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 400px) {
-
+    #nav{
+        padding-right: 0;
+    }
 }
 
 /* END OF NAVIGATION STYLE */
@@ -322,11 +333,25 @@ and (min-resolution:.001dpcm) {
 
 
 /* ONDERDELEN STYLE */
-.buttonFloatLeft{
+
+.buttonOnderdeelToevoegen{
     float: left;
     margin-bottom: 50px;
-    margin-top: 25px;
+    margin-top: 50px;
+    background-color: #23507d;
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 225px;
 }
+buttonOnderdeelToevoegen:hover{
+    background-color: #1d3f62;
+    cursor: pointer;
+}
+
 #onderdelenTabel {
     margin-top: 50px;
     border-collapse: collapse;
@@ -337,6 +362,8 @@ and (min-resolution:.001dpcm) {
     border-bottom: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #onderdelenTabel tr:nth-child(even){background-color: #f2f2f2;}
@@ -361,6 +388,38 @@ and (min-resolution:.001dpcm) {
     margin-right: 10px;
     text-decoration: none;
     color: #23507d;
+}
+#onderdelenTabel-OverflowFix{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1000px) {
+    #onderdelenTabel-OverflowFix{
+        overflow-x: scroll;
+    }
+    #onderdelenTabel {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 750px){
+
+}
+
+@media (max-width: 550px) {
+    .buttonOnderdeelToevoegen {
+        float: none;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+
 }
 
 /* END OF ONDERDELEN STYLE */
