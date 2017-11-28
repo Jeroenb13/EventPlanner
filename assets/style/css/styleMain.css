@@ -290,9 +290,9 @@ and (min-resolution:.001dpcm) {
 /* KAART STYLE */
 
 #map{
-    height: 640px;
-    width: 640px;
-    margin: 10px;
+    height: 800px;
+    width: 800px;
+    margin-left: 30px;
 }
 @media (max-width: 1200px) {
     #map{
@@ -310,18 +310,15 @@ and (min-resolution:.001dpcm) {
 
 @media (max-width: 750px) {
     #map {
-        width: 100%;
+        width: 90%;
+
     }
 }
 
 @media (max-width: 550px) {
     #map{
-        width: 100%;
+        width: 90%;
     }
-}
-
-@media (max-width: 400px) {
-
 }
 
 /* END OF KAART STYLE */
