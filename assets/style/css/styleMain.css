@@ -79,13 +79,6 @@ p{
     color: #001241;
 }
 
-.paragraph{
-    margin: 0 auto;
-    margin-top: 100px;
-    max-width: 70%;
-    margin-bottom: 100px;
-}
-
 button{
     float: none;
     margin-top: 25px;
@@ -105,6 +98,18 @@ button:hover{
     cursor: pointer;
 }
 
+/* Container for the onderdelen, kaart and onderdeel toevoegen pages */
+#container-plus{
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    -moz-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
+    text-align: center;
+}
+
 .link{
     font-weight: 400;
     color: #001241;
@@ -121,6 +126,9 @@ and (min-resolution:.001dpcm) {
     #container{
         width: 55%;
     }
+    #container-plus{
+        width: 80%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -129,6 +137,9 @@ and (min-resolution:.001dpcm) {
     }
     #page-container{
         width: 90%;
+    }
+    #container-plus{
+        width: 85%;
     }
 }
 
@@ -144,6 +155,9 @@ and (min-resolution:.001dpcm) {
         font-size: 4rem;
         letter-spacing: -5px;
     }
+    #container-plus{
+        width: 100%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -153,7 +167,9 @@ and (min-resolution:.001dpcm) {
 }
 
 @media (max-width: 400px) {
-
+    #container-plus{
+        width: 100%;
+    }
 }
 
 /* END OF MAIN STYLE */
@@ -244,38 +260,29 @@ and (min-resolution:.001dpcm) {
     padding-bottom: 100px;
 }
 
-#container-plus{
-    width: 70%;
-    min-height: 100vh;
+.paragraph{
     margin: 0 auto;
-    background-color: white;
-    -webkit-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
-    -moz-box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
-    box-shadow: 0 0 42px 0 rgba(0,0,0,0.48);
-    text-align: center;
+    margin-top: 100px;
+    max-width: 70%;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
-    #container-plus{
-        width: 80%;
-    }
+
 }
 
 @media (max-width: 1000px) {
-    #container-plus{
-        width: 85%;
-    }
+
 }
 
 @media (max-width: 750px) {
-    #container-plus {
-        width: 100%;
-    }
 }
 
 @media (max-width: 550px) {
-    #container-plus{
-        width: 100%;
+    .paragraph{
+        margin-top: 50px;
+        max-width: 85%;
+        margin-bottom: 50px;
     }
 }
 
@@ -344,7 +351,7 @@ and (min-resolution:.001dpcm) {
     font-size: 18px;
     width: 225px;
 }
-buttonOnderdeelToevoegen:hover{
+.buttonOnderdeelToevoegen:hover{
     background-color: #1d3f62;
     cursor: pointer;
 }
