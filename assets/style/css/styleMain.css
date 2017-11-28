@@ -127,11 +127,17 @@ and (min-resolution:.001dpcm) {
     #container{
         width: 70%;
     }
+    #page-container{
+        width: 90%;
+    }
 }
 
 @media (max-width: 750px) {
     #container {
         width: 85%;
+    }
+    #page-container{
+        width: 95%;
     }
 }
 
@@ -340,6 +346,18 @@ and (min-resolution:.001dpcm) {
     text-align: left;
     background-color: #23507d;
     color: #ffffff;
+}
+
+.onderdelenKleur{
+    height: 20px;
+    width: 5px;
+}
+
+#onderdelenTabel a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #23507d;
 }
 
 /* END OF ONDERDELEN STYLE */

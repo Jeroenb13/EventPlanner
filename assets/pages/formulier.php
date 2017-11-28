@@ -21,9 +21,10 @@ Inhoud:
         </ul>
     </div>
 
-    <h1>Event Planner</h1>
+    <div id="page-container">
 
-    <div class="paragraph">
+        <h1>Event Planner</h1>
+
         <p>Voeg hier dingen toe</p>
 
         <form id="inputForm" method="post" action="">
@@ -45,14 +46,4 @@ Inhoud:
             <input type="submit" value="Toevoegen" name="submit">
         </form>
 
-    </div>
-
-
-
-    <div class="buttons">
-        <a href="?page=form"><button>Start</button></a>
-    </div>
-
-    <div class="buttons">
-        <a href="?page=login"><button>Login</button></a>
     </div>
