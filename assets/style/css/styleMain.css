@@ -83,6 +83,13 @@ p{
     height: 20px;
 }
 
+/* Error 404 image */
+#image404{
+    margin-top: 50px;
+    width: 400px;
+    max-width: 100%;
+}
+
 button, .button{
     float: none;
     margin-top: 25px;
@@ -346,7 +353,6 @@ and (min-resolution:.001dpcm) {
     border: 1px solid #8d8d8d;
     color: #8d8d8d;
     padding: 13px;
-    text-align: center;
     text-decoration: none;
     font-size: 16px;
     width: 225px;
