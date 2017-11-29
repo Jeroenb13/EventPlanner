@@ -13,7 +13,7 @@ if (isset($_POST['submit']))
         $un = $_POST['uName'];
         $pw = $_POST['uName'] . $_POST['pWord'];
 
-// Gebruikerscode en ww pakken
+        // Gebruikerscode en ww pakken
 
         $stmt = $db->prepare("SELECT 'cLevel' + 'pWord' FROM gebruiker WHERE uName = '{$un}';");
 
@@ -52,18 +52,17 @@ Inhoud:
     <div id="upperbar"></div>
 
     <h1>EventPlanner</h1>
-    <p>Log in om uw objecten aan te passen</p>
+    <h2>Login</h2>
 
 
-    <form action="#" method="post">
+    <form id="loginForm" action="#" method="post">
 
+        <div><input class="inputField" type="text" name="uName" placeholder="Gebruikersnaam"></div>
 
-        <label>Gebruikersnaam</label>
+        <div><input class="inputField" type="password" name="pWord" placeholder="Wachtwoord"></div>
 
-        <p> <input type="text" name="uName"></p>
-
-        <label>wachtwoord</label>:
-        <p>    <input type="password" name="pWord"></p>
-
-        <input type="submit" name="submit" value="inloggen">
+        <input class="button buttonSubmit" type="submit" name="submit" value="Inloggen">
     </form>
+
+    <div class="spacer"></div>
+    <a class="wwVergetenLink" href="?page=wachtwoordVergeten">Wachtwoord vergeten?</a>

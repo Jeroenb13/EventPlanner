@@ -16,11 +16,6 @@ Inhoud:
     </div>
 
     <div class="buttonDiv">
-        <div class="button">
-            <a href="?page=onderdelen"><button>Start</button></a>
-        </div>
-
-        <div class="button">
-            <a href="?page=login"><button>Login</button></a>
-        </div>
+        <div><a href="?page=onderdelen"><button>Start</button></a></div>
+        <div><a href="?page=login"><button>Login</button></a></div>
     </div>

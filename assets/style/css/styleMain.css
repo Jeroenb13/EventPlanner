@@ -79,7 +79,11 @@ p{
     color: #001241;
 }
 
-button{
+.spacer{
+    height: 20px;
+}
+
+button, .button{
     float: none;
     margin-top: 25px;
     background-color: #23507d;
@@ -90,10 +94,9 @@ button{
     text-decoration: none;
     font-size: 18px;
     width: 225px;
-
 }
 
-button:hover{
+button:hover, .button:hover{
     background-color: #1d3f62;
     cursor: pointer;
 }
@@ -332,6 +335,29 @@ and (min-resolution:.001dpcm) {
 
 
 /* LOGIN STYLE */
+#loginForm{
+    margin-top: 25px;
+}
+.inputField{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: none;
+    background-color: #f8f8f8;
+    border: 1px solid #8d8d8d;
+    color: #8d8d8d;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 225px;
+}
+.buttonSubmit{
+    width: 250px;
+}
+.wwVergetenLink{
+    color: #23507d;
+}
+
 /* END OF LOGIN STYLE */
 
 
