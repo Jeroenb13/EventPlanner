@@ -1,10 +1,14 @@
 <?php
 $serverName = $_SERVER['SERVER_NAME'];
-if($serverName != "localhost" && $serverName != "127.0.0.1") {
+if($serverName == "inf2j.aryoco.nl") {
     $dsn = "mysql:dbname=aryocon_inf2j;host=localhost;port=3306;charset=UTF8";
     $username="aryocon_inf2j";
     $password="geefbier";
-}else{
+}else if($serverName == "eventplanner.joeymariah.me") {
+    $dsn = "mysql:dbname=joeynlxj_Eventplanner;host=localhost;port=3306;charset=UTF8";
+    $username="joeynlxj_Eventplanner";
+    $password="dinges22";
+}else {
     $dsn = "mysql:dbname=aryocon_inf2j;host=localhost;port=3306;charset=UTF8";
     $username="root";
     $password="";
