@@ -324,6 +324,7 @@ and (min-resolution:.001dpcm) {
     height: 500px;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    overflow-y: scroll;
 }
 
 #map{
@@ -332,6 +333,48 @@ and (min-resolution:.001dpcm) {
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
+
+/* Objectlist next to the map */
+.mapObjectListItem{
+    float: left;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 75px;
+    margin-bottom: 10px;
+}
+.mapObjectDisplayBox{
+    float: left;
+    height: 63px;
+    width: 63px;
+    margin: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #d8d8d8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.objectDisplay{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 50px;
+    height: 25px;
+    background-color: blue;
+}
+.mapObjectDescription{
+    text-align: left;
+    float: left;
+    height: 65px;
+    margin: 5px;
+    width: calc(100% - 85px);
+}
+.mapObjectTitle{
+    font-size: 14pt;
+}
+.mapObjectCategory{
+    font-size: 12pt;
+}
+
+
 
 @media (max-width: 1200px) {
     #map{
@@ -356,9 +399,15 @@ and (min-resolution:.001dpcm) {
     #map {
         width: 95%;
     }
+    .mapObjectListItem{
+        width: calc(50% - 10px);
+    }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+    .mapObjectListItem{
+        width: calc(100% - 10px);
+    }
 }
 
 /* END OF KAART STYLE */

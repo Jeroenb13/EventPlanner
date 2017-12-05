@@ -15,13 +15,77 @@
 
     <div class="spacer-100"></div>
 
-    <!--
-    <div id="legend">
-        <h3>Legend</h3>
-    </div>-->
-
     <div id="mapAndObjectsContainer">
-        <div id="mapObjects"></div>
+        <div id="mapObjects">
+
+            <!-- Object in the list of objects next to the map -->
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Podium1</p>
+                    <p class="mapObjectCategory">Podia</p>
+                </div>
+            </div>
+
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Harry's hap</p>
+                    <p class="mapObjectCategory">Eet- en drankkramen</p>
+                </div>
+            </div>
+
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Podium1</p>
+                    <p class="mapObjectCategory">Podia</p>
+                </div>
+            </div>
+
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Harry's hap</p>
+                    <p class="mapObjectCategory">Eet- en drankkramen</p>
+                </div>
+            </div>
+
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Podium1</p>
+                    <p class="mapObjectCategory">Podia</p>
+                </div>
+            </div>
+
+            <div class="mapObjectListItem">
+                <div class="mapObjectDisplayBox">
+                    <div class="objectDisplay">
+                    </div>
+                </div>
+                <div class="mapObjectDescription">
+                    <p class="mapObjectTitle">Harry's hap</p>
+                    <p class="mapObjectCategory">Eet- en drankkramen</p>
+                </div>
+            </div>
+
+        </div>
 
         <div id="map">
         <script>
