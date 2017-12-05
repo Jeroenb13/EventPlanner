@@ -344,16 +344,21 @@ and (min-resolution:.001dpcm) {
 }
 
 @media (max-width: 750px) {
+    #mapAndObjectsContainer {
+        display: block;
+        height: 800px;
+    }
+    #mapObjects{
+        width: 95%;
+        height: 250px;
+        margin-bottom: 25px;
+    }
     #map {
-        width: 90%;
-
+        width: 95%;
     }
 }
 
 @media (max-width: 550px) {
-    #map{
-        width: 90%;
-    }
 }
 
 /* END OF KAART STYLE */
