@@ -51,7 +51,7 @@ Inhoud:
 <div id="container">
     <div id="upperbar"></div>
 
-    <h1>EventPlanner</h1>
+    <h1>Event Planner</h1>
     <h2>Login</h2>
 
 
