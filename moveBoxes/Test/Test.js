@@ -1,4 +1,4 @@
-var width = window.innerWidth;
+    var width = window.innerWidth;
     var height = window.innerHeight;
 
     var stage = new Konva.Stage({
@@ -9,27 +9,24 @@ var width = window.innerWidth;
 
     var debug = false;
 
-    var layer = new Konva.Layer();
+    function drawBackground(backlayer, background) {
+        var context = backlayer.getContext();
+        context.drawImage(background, 0, 0);
+    }
+
     var backlayer = new Konva.Layer();
     var buttonLayer = new Konva.Layer();
+    var layer = new Konva.Layer();
+
 
     var rectX = stage.getWidth() / 2 - 50;
     var rectY = stage.getHeight() / 2 - 25;
 
     var background = new Image();
-    background.onload = function() {
-
-      var bckgrnd = new Konva.Image({
-        x: 50,
-        y: 50,
-        image: background,
-        width: 106,
-        height: 118
-      });
-      backlayer.add(bckgrnd);
-      stage.add(backlayer);
-    };
     background.src = 'images/Basic.png';
+    stage.add(backlayer);
+
+    drawBackground(backlayer, background);
 
     var array = 2;
     var blockArray = [];
@@ -41,6 +38,7 @@ var width = window.innerWidth;
     {
         addBox(item.width, item.height, item.color);
     }
+    addBox(100, 100, "red");
 
     function addBox(widthinput, heightinput, color){
         var boxrect = new Konva.Rect({
