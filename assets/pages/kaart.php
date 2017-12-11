@@ -104,11 +104,12 @@
                 };
 
 
-
+                /*
                 EmmenOverlay = new google.maps.GroundOverlay(
                     'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg', imageBounds);
                 EmmenOverlay.setMap(map);
                 EmmenOverlay.setOpacity(0.5);
+                */
 
 
 
@@ -175,6 +176,3 @@
         </script>
         </div>
     </div>
-
-
-
