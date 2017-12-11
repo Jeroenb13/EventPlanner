@@ -12,6 +12,7 @@
     function drawBackground(backlayer, background) {
         var context = backlayer.getContext();
         context.drawImage(background, 0, 0);
+        context.setAttr("fillStyle", "white");
     }
 
     var backlayer = new Konva.Layer();
@@ -38,7 +39,6 @@
     {
         addBox(item.width, item.height, item.color);
     }
-    addBox(100, 100, "red");
 
     function addBox(widthinput, heightinput, color){
         var boxrect = new Konva.Rect({
@@ -52,6 +52,7 @@
             draggable: true,
             shadowColor: 'black',
             shadowBlur: 10,
+            offset: {x: widthinput/2, y: heightinput/2},
             shadowOffset: {x : 10, y : 10},
             shadowOpacity: 0.5,
             active: false,
