@@ -1,3 +1,8 @@
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
     var width = window.innerWidth;
     var height = window.innerHeight;
 
@@ -8,12 +13,6 @@
     });
 
     var debug = false;
-
-    function drawBackground(backlayer, background) {
-        var context = backlayer.getContext();
-        context.drawImage(background, 0, 0);
-        context.setAttr("fillStyle", "white");
-    }
 
     var backlayer = new Konva.Layer();
     var buttonLayer = new Konva.Layer();
@@ -177,4 +176,10 @@ for(var num = 0; num < array; num++)
             activeArray[j].active = false;
             console.log(activeArray[j].stroke);
         }
+     }
+
+     function drawBackground(backlayer, background) {
+         var context = backlayer.getContext();
+         context.drawImage(background, 0, 0);
+         context.setAttr("fillStyle", "white");
      }
