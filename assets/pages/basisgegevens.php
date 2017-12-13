@@ -26,7 +26,10 @@
 
     <div class="spacer-100"></div>
 
-    <div><a href="?page=onderdelen"><button>Verder</button></a></div>
+    <form method="POST" action="?page=onderdelen">
+      <input type="text">
+      <button type="submit">Verder</button>
+    </form>
 
   </div>
 </div>
