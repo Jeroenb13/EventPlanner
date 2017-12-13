@@ -8,7 +8,12 @@
    - Formulier Style
 */
 
-
+/* REMOVE: */
+@media (max-width: 550px) {
+    #testoverlay{
+      display: none;
+    }
+}
 
 /* MAIN STYLE */
 *{
@@ -217,12 +222,19 @@ and (min-resolution:.001dpcm) {
     border-left: 1px solid #d8d8d8;
 }
 
-#nav > ul > li:first-child{
+#nav > ul > li:nth-last-child(3){
     border-right: 1px solid #d8d8d8;
 }
 
 #nav > ul > li > a:hover {
     background-color: #e2e2e2;
+}
+#nav > ul > li:first-child{
+  margin-top: -2px;
+  display: none;
+}
+#nav-overlay{
+  display: none;
 }
 
 #upperbar{
@@ -253,17 +265,19 @@ and (min-resolution:.001dpcm) {
         width: 100%;
     }
     #nav{
-        padding-right: 50px;
+        padding-right: 0;
     }
-    #nav > ul < li:not(:last-child) {
+    #nav > ul > li:not(:first-child) {
       display: none;
+    }
+    #nav > ul > li:first-child{
+      margin-top: -2px;
+      display: block;
+      cursor: pointer;
     }
 }
 
 @media (max-width: 400px) {
-    #nav{
-        padding-right: 0;
-    }
 }
 
 /* END OF NAVIGATION STYLE */

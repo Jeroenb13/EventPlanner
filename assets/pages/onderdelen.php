@@ -4,11 +4,16 @@
     <!-- Navigation -->
     <div id="nav">
         <ul>
+          <li><a onclick="showNav()">☰</a></li>
           <li><a href="?page=kaart">Kaart</a></li>
           <li><a href="?page=onderdelen">Onderdelen</a></li>
           <li><a href="?page=basisgegevens">Basisgegevens</a></li>
-          <li><a>☰</a></li>
         </ul>
+    </div>
+    <div id="nav-overlay">
+      <li><a href="?page=kaart">Kaart</a></li>
+      <li><a href="?page=onderdelen">Onderdelen</a></li>
+      <li><a href="?page=basisgegevens">Basisgegevens</a></li>
     </div>
 
     <div id="page-container">
