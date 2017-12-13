@@ -57,9 +57,9 @@ Inhoud:
 
     <form id="loginForm" action="#" method="post">
 
-        <div><input class="inputField" type="text" name="uName" placeholder="Gebruikersnaam"><i class="icon-user"></i></div>
+        <div><input class="inputField" type="text" name="uName" placeholder="Gebruikersnaam"><i class="icons-inputfields icon-user"></i></div>
 
-        <div><input class="inputField" type="password" name="pWord" placeholder="Wachtwoord"><i class="icon-lock"></i></div>
+        <div><input class="inputField" type="password" name="pWord" placeholder="Wachtwoord"><i class="icons-inputfields icon-lock"></i></div>
 
         <input class="button buttonSubmit" type="submit" name="submit" value="Inloggen">
     </form>
