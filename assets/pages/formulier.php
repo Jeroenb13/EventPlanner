@@ -198,9 +198,9 @@ Inhoud:
             <div class="podia">
             <p>Beschikbare podia</p>
             <select name="beschikbarePodia">
-                <option value="podiumEen">Bierpompen</option>
-                <option value="podiumTwee">eet- en drankkramen</option>
-                <option value="podiumDrie">Toiletten</option>
+                <option value="podiumEen">podium 1</option>
+                <option value="podiumTwee">podium 2</option>
+                <option value="podiumDrie">podium 3</option>
             </select><hr>
 
             <p>Soort:</p>
