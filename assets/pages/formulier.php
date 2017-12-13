@@ -23,12 +23,13 @@ Inhoud:
     <div id="page-container">
 
         <h1>Event Planner</h1>
+        <h2>Kaart</h2>
 
         <p>Voeg hier dingen toe</p>
 
-        <div id="inputForm" method="post" action="">
-            <form>
-            <p>Categorie</p>
+        <div id="inputForm">
+            <form method="post" action="">
+            <p>Categorie:</p>
             <select name="inputCat" id="inputCat">
                 <option value="bierpompen">Bierpompen</option>
                 <option value="eetkramen">eet- en drankkramen</option>
@@ -320,4 +321,5 @@ Inhoud:
         </div>
         </form>
 
+    </div>
     </div>
