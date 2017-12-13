@@ -42,7 +42,7 @@ Inhoud:
         <div id="inputForm">
             <form method="post" action="">
             <p>Categorie:</p>
-            <select name="inputCat" id="inputCat">
+            <select class="formSelect" name="inputCat" id="inputCat">
                 <option value="bierpompen">Bierpompen</option>
                 <option value="eetkramen">eet- en drankkramen</option>
                 <option value="toiletten">Toiletten</option>
@@ -60,7 +60,7 @@ Inhoud:
 
                 <hr>
             <p>Naam:</p>
-            <input type="text" name="nameInput">
+            <input class="formInput" type="text" name="nameInput">
             <br/><hr>
 
             <script>
@@ -136,37 +136,37 @@ Inhoud:
             <!--Voor de eerste 9 faciliteiten-->
             <div class="faciliteiten">
             <p>Soort:</p>
-            <input type="text" name="soort">
+            <input class="formInput" type="text" name="soort">
             <br/><hr>
 
             <p>Oppervlakte:</p>
-            <input type="radio" name="facOppervlakte" value="facCirkel"> Circel
+            <input  type="radio" name="facOppervlakte" value="facCirkel"> Circel
             <input type="radio" name="facOppervlakte" value="facVierkant"> Vierkant
             <br/><hr>
             <p>Lengte:</p>
-            <input type="text" name="facLengte"> cm
+            <input class="formInput" type="text" name="facLengte"> cm
             <br/><hr>
             <p>Breedte:</p>
-            <input type="text" name="facBreedte"> cm
+            <input class="formInput" type="text" name="facBreedte"> cm
             <br/><hr>
             <p>Diameter:</p>
-            <input type="text" name="facDiameter">
+            <input class="formInput" type="text" name="facDiameter">
             <br/><hr>
 
             <p>Hoogte:</p>
-            <input type="text" name="facHoogte">
+            <input class="formInput" type="text" name="facHoogte">
             <br/><hr>
 
             <p>Gewicht:</p>
-            <input type="text" name="facGewicht">
+            <input class="formInput" type="text" name="facGewicht">
             <br/><hr>
 
             <p>Extra oppervlakte:</p>
             <p>Hoogte:</p>
-            <input type="text" name="extraHoogte">
+            <input class="formInput" type="text" name="extraHoogte">
             <br/><hr>
             <p>Breedte:</p>
-            <input type="text" name="extraBreedte">
+            <input class="formInput" type="text" name="extraBreedte">
             <br/><hr>
 
             <p>Elektriciteit:</p>
@@ -190,21 +190,21 @@ Inhoud:
             <br/><hr>
 
             <p>Extra bijzonderheden:</p>
-            <input type="text" name="facBijzonderheden">
+            <input class="formInput" type="text" name="facBijzonderheden">
             <br/>
             </div>
 
             <!--Voor het podia-->
             <div class="podia">
             <p>Beschikbare podia</p>
-            <select name="beschikbarePodia">
+            <select class="formSelect" name="beschikbarePodia">
                 <option value="podiumEen">podium 1</option>
                 <option value="podiumTwee">podium 2</option>
                 <option value="podiumDrie">podium 3</option>
             </select><hr>
 
             <p>Soort:</p>
-            <input type="text" name="podiaSoort">
+            <input class="formInput" type="text" name="podiaSoort">
             <br/><hr>
 
             <p>Oppervlakte:</p>
@@ -212,25 +212,25 @@ Inhoud:
             <input type="radio" name="podiaOppervlakte" value="podiaVierkant"> Vierkant
             <br/><hr>
             <p>Lengte:</p>
-            <input type="text" name="podiaLengte"> cm
+            <input class="formInput" type="text" name="podiaLengte"> cm
             <br/><hr>
             <p>Breedte:</p>
-            <input type="text" name="podiaBreedte"> cm
+            <input class="formInput" type="text" name="podiaBreedte"> cm
             <br/><hr>
             <p>Diameter:</p>
-            <input type="text" name="podiaDiameter">
+            <input class="formInput" type="text" name="podiaDiameter">
             <br/><hr>
 
             <p>Hoogte:</p>
-            <input type="text" name="podiaHoogte">
+            <input class="formInput" type="text" name="podiaHoogte">
             <br/><hr>
 
             <p>Gewicht:</p>
-            <input type="text" name="podiaGewicht">
+            <input class="formInput" type="text" name="podiaGewicht">
             <br/><hr>
 
             <p>Naam bedrijf:</p>
-            <input type="text" name="podiaBedrijfsnaam">
+            <input class="formInput" type="text" name="podiaBedrijfsnaam">
             <br/><hr>
 
             <p>Bouwteking uploaden:</p>
@@ -245,14 +245,14 @@ Inhoud:
             <!--Voor de tenten-->
             <div class="tenten">
             <p>Beschikbare tenten</p>
-            <select name="beschikbarePodia">
+            <select class="formSelect" name="beschikbarePodia">
                 <option value="tentEen">Bierpompen</option>
                 <option value="tentTwee">eet- en drankkramen</option>
                 <option value="tentDrie">Toiletten</option>
             </select><hr>
 
             <p>Soort:</p>
-            <input type="text" name="tentSoort">
+            <input class="formInput" type="text" name="tentSoort">
             <br/><hr>
 
             <p>Oppervlakte:</p>
@@ -260,25 +260,25 @@ Inhoud:
             <input type="radio" name="tentOppervlakte" value="tentVierkant"> Vierkant
             <br/><hr>
             <p>Lengte:</p>
-            <input type="text" name="tentLengte"> cm
+            <input class="formInput" type="text" name="tentLengte"> cm
             <br/><hr>
             <p>Breedte:</p>
-            <input type="text" name="tentBreedte"> cm
+            <input class="formInput" type="text" name="tentBreedte"> cm
             <br/><hr>
             <p>Diameter:</p>
-            <input type="text" name="tentDiameter">
+            <input class="formInput" type="text" name="tentDiameter">
             <br/><hr>
 
             <p>Hoogte:</p>
-            <input type="text" name="tentHoogte">
+            <input class="formInput" type="text" name="tentHoogte">
             <br/><hr>
 
             <p>Gewicht:</p>
-            <input type="text" name="tentGewicht">
+            <input class="formInput" type="text" name="tentGewicht">
             <br/><hr>
 
             <p>Naam bedrijf:</p>
-            <input type="text" name="tentBedrijfsnaam">
+            <input class="formInput" type="text" name="tentBedrijfsnaam">
             <br/><hr>
 
             <p>Bouwteking uploaden:</p>
@@ -293,7 +293,7 @@ Inhoud:
             <!--Voor de barricades-->
             <div class="barricades">
             <p>Soort:</p>
-            <select name="barrSoort" id="barrSoort">
+            <select class="formSelect" name="barrSoort" id="barrSoort">
                 <option value="hogeHekken" id="hogeHekken">Hoge hekken</option>
                 <option value="lageHekken" id="lageHekken">Lage hekken</option>
                 <option value="mojoBarr" id="mojoBarr">Mojo barriers</option>
@@ -301,7 +301,7 @@ Inhoud:
             <br/><hr>
 
             <p>Hoeveelheid:</p>
-            <input type="text" name="barrOppervlakte">
+            <input class="formInput" type="text" name="barrOppervlakte">
             <br/><hr>
 
             <!--Als hoge hekken worden gekozen-->
@@ -312,22 +312,22 @@ Inhoud:
             <br/><hr>
 
             <p>Hoogte:</p>
-            <input type="text" name="hogeHekHoogte">
+            <input class="formInput" type="text" name="hogeHekHoogte">
             <br/><hr>
 
             <p>Lengte:</p>
-            <input type="text" name="hogeHekLengte">
+            <input class="formInput" type="text" name="hogeHekLengte">
             <br/>
             </div>
 
             <!--Als lage hekken worden gekozen-->
             <div class="lageHekken">
             <p>Hoogte:</p>
-            <input type="text" name="lageHekHoogte">
+            <input class="formInput" type="text" name="lageHekHoogte">
             <br/><hr>
 
             <p>Lengte:</p>
-            <input type="text" name="lageHekLengte">
+            <input class="formInput" type="text" name="lageHekLengte">
             <br/>
             </div>
         </div>

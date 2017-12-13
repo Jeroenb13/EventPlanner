@@ -608,7 +608,7 @@ hr{
     background-color: #d8d8d8;
 }
 
-input[type=text] {
+.formInput {
     width: 208px;
     padding: 8px 10px;
     margin: 5px 0;
@@ -617,11 +617,11 @@ input[type=text] {
     border: hidden;
 }
 
-input[type=text]:focus{
+.formInput:focus{
     border: 2px solid #23507d ;
 }
 
-select {
+.formSelect {
     padding: 8px 10px;
     margin: 5px 0;
     border: none;
