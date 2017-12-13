@@ -5,6 +5,7 @@
    - Kaart Style
    - Login Style
    - Onderdelen Style
+   - Formulier Style
 */
 
 
@@ -541,3 +542,12 @@ and (min-resolution:.001dpcm) {
 }
 
 /* END OF ONDERDELEN STYLE */
+
+/* ONDERDELEN FORMULIER */
+
+#inputForm{
+    float: left;
+    text-align: left;
+}
+
+/* END OF FORMULIEREN STYLE */
