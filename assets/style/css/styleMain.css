@@ -233,8 +233,45 @@ and (min-resolution:.001dpcm) {
   margin-top: -2px;
   display: none;
 }
+.nav-divider{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
 #nav-overlay{
-  display: none;
+  height: 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: right;
+  width: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#nav-overlay > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav-overlay > ul > li{
+}
+
+#nav-overlay > ul > li > a{
+    font-size: 14pt;
+    color: #001241;
+    display: block;
+    text-align: center;
+    padding: 26px 20px;
+    text-decoration: none;
+}
+
+#nav-overlay > ul > li > a:hover {
+    background-color: #e2e2e2;
 }
 
 #upperbar{
