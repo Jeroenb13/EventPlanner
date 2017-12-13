@@ -112,6 +112,8 @@ Inhoud:
                             $lageHekken.show();
                             console.log(value);
                         }else{
+                            $lageHekken.hide();
+                            $hogeHekken.hide();
                         }
                     });
                 });
