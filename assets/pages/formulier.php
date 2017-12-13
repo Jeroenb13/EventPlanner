@@ -52,10 +52,6 @@ Inhoud:
 
             <script>
                 $(document).ready(function () {
-                    var $podiaMain = $("#podiaMain");
-                    var $tentenMain = $("#tentenMain");
-                    var $barricadesMain = $("#barricadesMain");
-
                     var $podia = $(".podia");
                     var $tenten = $(".tenten");
                     var $barricades = $(".barricades");
@@ -96,8 +92,29 @@ Inhoud:
                             $faciliteiten.show();
                         }
                     });
-                });
 
+                    var $hogeHekken = $(".hogeHekken");
+                    var $lageHekken = $(".lageHekken");
+
+                    $(document).ready(function() {
+                        $hogeHekken.hide();
+                        $lageHekken.hide();
+                    });
+
+                    $("#barrSoort").change(function () {
+                        var value = $( "#barrSoort" ).val();
+                        if(value == "hogeHekken"){
+                            $lageHekken.hide();
+                            $hogeHekken.show();
+                            console.log(value);
+                        }else if(value == "lageHekken"){
+                            $hogeHekken.hide();
+                            $lageHekken.show();
+                            console.log(value);
+                        }else{
+                        }
+                    });
+                });
 
             </script>
 
@@ -261,10 +278,10 @@ Inhoud:
             <!--Voor de barricades-->
             <div class="barricades">
             <p>Soort:</p>
-            <select name="barrSoort">
-                <option value="barrEen">Hoge hekken</option>
-                <option value="barDrie">Lage hekken</option>
-                <option value="barrTwee">Mojo barriers</option>
+            <select name="barrSoort" id="barrSoort">
+                <option value="hogeHekken" id="hogeHekken">Hoge hekken</option>
+                <option value="lageHekken" id="lageHekken">Lage hekken</option>
+                <option value="mojoBarr" id="mojoBarr">Mojo barriers</option>
             </select>
             <br/>
 
