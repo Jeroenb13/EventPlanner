@@ -35,9 +35,9 @@ Inhoud:
     <div id="page-container">
 
         <h1>Event Planner</h1>
-        <h2>Kaart</h2>
+        <h2>Kaart</h2><br>
 
-        <p>Voeg hier dingen toe</p>
+        <p>Vul hier de juiste gegevens in</p>
 
         <div id="inputForm">
             <form method="post" action="">
@@ -57,11 +57,11 @@ Inhoud:
                 <option value="tenten" id="tentenMain">Tenten</option>
                 <option value="barricades" id="barricadesMain">Barricades</option>
             </select>
-            <input type="submit" value="toevoegen" name="submit">
 
+                <hr>
             <p>Naam:</p>
             <input type="text" name="nameInput">
-            <br/>
+            <br/><hr>
 
             <script>
                 $(document).ready(function () {
@@ -137,57 +137,57 @@ Inhoud:
             <div class="faciliteiten">
             <p>Soort:</p>
             <input type="text" name="soort">
-            <br/>
+            <br/><hr>
 
             <p>Oppervlakte:</p>
             <input type="radio" name="facOppervlakte" value="facCirkel"> Circel
             <input type="radio" name="facOppervlakte" value="facVierkant"> Vierkant
-            <br/>
+            <br/><hr>
             <p>Lengte:</p>
             <input type="text" name="facLengte"> cm
-            <br/>
+            <br/><hr>
             <p>Breedte:</p>
             <input type="text" name="facBreedte"> cm
-            <br/>
+            <br/><hr>
             <p>Diameter:</p>
             <input type="text" name="facDiameter">
-            <br/>
+            <br/><hr>
 
             <p>Hoogte:</p>
             <input type="text" name="facHoogte">
-            <br/>
+            <br/><hr>
 
             <p>Gewicht:</p>
             <input type="text" name="facGewicht">
-            <br/>
+            <br/><hr>
 
             <p>Extra oppervlakte:</p>
             <p>Hoogte:</p>
             <input type="text" name="extraHoogte">
-            <br/>
+            <br/><hr>
             <p>Breedte:</p>
             <input type="text" name="extraBreedte">
-            <br/>
+            <br/><hr>
 
             <p>Elektriciteit:</p>
             <input type="radio" name="facElektriciteit" value="ja"> Ja
             <input type="radio" name="facElektriciteit" value="nee"> Nee
-            <br/>
+            <br/><hr>
 
             <p>Gas:</p>
             <input type="radio" name="facGas" value="ja"> Ja
             <input type="radio" name="facGas" value="nee"> Nee
-            <br/>
+            <br/><hr>
 
             <p>Water:</p>
             <input type="radio" name="facWater" value="ja"> Ja
             <input type="radio" name="facWater" value="nee"> Nee
-            <br/>
+            <br/><hr>
 
             <p>Open vuur:</p>
             <input type="radio" name="facVuur" value="ja"> Ja
             <input type="radio" name="facVuur" value="nee"> Nee
-            <br/>
+            <br/><hr>
 
             <p>Extra bijzonderheden:</p>
             <input type="text" name="facBijzonderheden">
@@ -201,41 +201,41 @@ Inhoud:
                 <option value="podiumEen">Bierpompen</option>
                 <option value="podiumTwee">eet- en drankkramen</option>
                 <option value="podiumDrie">Toiletten</option>
-            </select>
+            </select><hr>
 
             <p>Soort:</p>
             <input type="text" name="podiaSoort">
-            <br/>
+            <br/><hr>
 
             <p>Oppervlakte:</p>
             <input type="radio" name="podiaOppervlakte" value="podiaCirkel"> Circel
             <input type="radio" name="podiaOppervlakte" value="podiaVierkant"> Vierkant
-            <br/>
+            <br/><hr>
             <p>Lengte:</p>
             <input type="text" name="podiaLengte"> cm
-            <br/>
+            <br/><hr>
             <p>Breedte:</p>
             <input type="text" name="podiaBreedte"> cm
-            <br/>
+            <br/><hr>
             <p>Diameter:</p>
             <input type="text" name="podiaDiameter">
-            <br/>
+            <br/><hr>
 
             <p>Hoogte:</p>
             <input type="text" name="podiaHoogte">
-            <br/>
+            <br/><hr>
 
             <p>Gewicht:</p>
             <input type="text" name="podiaGewicht">
-            <br/>
+            <br/><hr>
 
             <p>Naam bedrijf:</p>
             <input type="text" name="podiaBedrijfsnaam">
-            <br/>
+            <br/><hr>
 
             <p>Bouwteking uploaden:</p>
             <input type="file" name="podiaBouwtekening" id="podiaBouwtekening">
-            <br/>
+            <br/><hr>
 
             <p>Certificaat uploaden:</p>
             <input type="file" name="podiaCertificaat" id="podiaCertificaat">
@@ -249,41 +249,41 @@ Inhoud:
                 <option value="tentEen">Bierpompen</option>
                 <option value="tentTwee">eet- en drankkramen</option>
                 <option value="tentDrie">Toiletten</option>
-            </select>
+            </select><hr>
 
             <p>Soort:</p>
             <input type="text" name="tentSoort">
-            <br/>
+            <br/><hr>
 
             <p>Oppervlakte:</p>
             <input type="radio" name="tentOppervlakte" value="tentCirkel"> Circel
             <input type="radio" name="tentOppervlakte" value="tentVierkant"> Vierkant
-            <br/>
+            <br/><hr>
             <p>Lengte:</p>
             <input type="text" name="tentLengte"> cm
-            <br/>
+            <br/><hr>
             <p>Breedte:</p>
             <input type="text" name="tentBreedte"> cm
-            <br/>
+            <br/><hr>
             <p>Diameter:</p>
             <input type="text" name="tentDiameter">
-            <br/>
+            <br/><hr>
 
             <p>Hoogte:</p>
             <input type="text" name="tentHoogte">
-            <br/>
+            <br/><hr>
 
             <p>Gewicht:</p>
             <input type="text" name="tentGewicht">
-            <br/>
+            <br/><hr>
 
             <p>Naam bedrijf:</p>
             <input type="text" name="tentBedrijfsnaam">
-            <br/>
+            <br/><hr>
 
             <p>Bouwteking uploaden:</p>
             <input type="file" name="tentBouwtekening" id="tentBouwtekening">
-            <br/>
+            <br/><hr>
 
             <p>Certificaat uploaden:</p>
             <input type="file" name="tentCertificaat" id="tentCertificaat">
@@ -298,22 +298,22 @@ Inhoud:
                 <option value="lageHekken" id="lageHekken">Lage hekken</option>
                 <option value="mojoBarr" id="mojoBarr">Mojo barriers</option>
             </select>
-            <br/>
+            <br/><hr>
 
             <p>Hoeveelheid:</p>
             <input type="text" name="barrOppervlakte">
-            <br/>
+            <br/><hr>
 
             <!--Als hoge hekken worden gekozen-->
                 <div class="hogeHekken">
             <p>Geblindeerd hekwerk:</p>
             <input type="radio" name="blinderen" value="blindJa"> Ja
             <input type="radio" name="blinderen" value="blindNee"> Nee
-            <br/>
+            <br/><hr>
 
             <p>Hoogte:</p>
             <input type="text" name="hogeHekHoogte">
-            <br/>
+            <br/><hr>
 
             <p>Lengte:</p>
             <input type="text" name="hogeHekLengte">
@@ -324,7 +324,7 @@ Inhoud:
             <div class="lageHekken">
             <p>Hoogte:</p>
             <input type="text" name="lageHekHoogte">
-            <br/>
+            <br/><hr>
 
             <p>Lengte:</p>
             <input type="text" name="lageHekLengte">
