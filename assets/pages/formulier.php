@@ -35,9 +35,9 @@ Inhoud:
     <div id="page-container">
 
         <h1>Event Planner</h1>
-        <h2>Kaart</h2><br>
+        <h2>Kaart</h2>
 
-        <p>Vul hier de juiste gegevens in</p>
+        <p class="p-margin-top">Vul hier de juiste gegevens in</p>
 
         <div id="inputForm">
             <form method="post" action="">

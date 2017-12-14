@@ -6,6 +6,7 @@
    - Login Style
    - Onderdelen Style
    - Formulier Style
+   - Basisgegevens Style
 */
 
 /* REMOVE: */
@@ -51,6 +52,7 @@ body{
 #page-container{
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 /* TODO: Remove after project/nav is done */
@@ -78,6 +80,9 @@ h2{
 p{
     font-size: 1rem;
     color: #001241;
+}
+.p-margin-top{
+  margin-top: 20px;
 }
 
 .spacer{
@@ -240,7 +245,7 @@ and (min-resolution:.001dpcm) {
   background-color: #d8d8d8;
 }
 #nav-overlay{
-  height: 0;
+  height: 0.1px;
   background-color: #f8f8f8;
   border-bottom: 1px solid #d8d8d8;
   text-align: right;
@@ -630,3 +635,12 @@ hr{
 }
 
 /* END OF FORMULIEREN STYLE */
+
+
+/* BASISGEGEVENS STYLE */
+
+#basisgegevensForm{
+  text-align: left;
+}
+
+/* END OF BASISGEGEVENS STYLE */

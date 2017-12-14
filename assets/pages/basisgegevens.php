@@ -21,15 +21,26 @@
       </ul>
     </div>
 
-    <h1>Event Planner</h1>
-    <h2>Basisgegevens</h2>
+    <div id="page-container">
 
-    <div class="spacer-100"></div>
+      <h1>Event Planner</h1>
+      <h2>Basisgegevens</h2>
 
-    <form method="POST" action="?page=onderdelen">
-      <input type="text">
-      <button type="submit">Verder</button>
-    </form>
+      <p class="p-margin-top">Vul hier algemene informatie in voor het evenement.</p>
 
+      <div class="spacer-100"></div>
+
+      <form id="basisgegevensForm" method="POST" action="?page=onderdelen">
+        <br/><hr>
+        <p>Naam:</p>
+        <input class="formInput" type="text">
+        <br/><hr>
+        <p>Blae:</p>
+        <input class="formInput" type="text">
+        <br/><hr>
+        <button type="submit">Verder</button>
+      </form>
+
+    </div>
   </div>
 </div>
