@@ -373,21 +373,7 @@ and (min-resolution:.001dpcm) {
 [class^="icon-"]{
   font-size: 14pt;
 }
-.icon-medkit{
-  color: red;
-}
-.icon-taxi{
-  color: #0094ff;
-}
-.icon-bank{
-  color: grey;
-}
-.icon-extinguisher{
-  color: red;
-}
-.icon-user{
-  color: #2b2b2b;
-}
+
 [class^="status-"]{
   width: 5px;
   height: 20px;
@@ -403,3 +389,45 @@ and (min-resolution:.001dpcm) {
 }
 
 /* END OF ICONS & STATUSSES STYLE */
+
+
+/* PROFILE UPDATE STYLE */
+
+#inputForm{
+    text-align: left;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #d8d8d8;
+}
+
+.formInput {
+    width: 208px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    border: hidden;
+}
+
+.formInput:focus{
+    border: 2px solid #23507d ;
+}
+
+.formSelect {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+.inputGroup{
+  width: 100%;
+}
+
+
+/* END OF PROFILE UPDATE STYLE */
