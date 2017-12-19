@@ -28,15 +28,25 @@
 
       <p class="p-margin-top">Vul hier algemene informatie in voor het evenement.</p>
 
-      <div class="spacer-100"></div>
-
       <form id="basisgegevensForm" method="POST" action="?page=onderdelen">
         <br/><hr>
-        <p>Naam:</p>
+        <h2>Persoonlijke gegevens</h2>
+        <p class="basisgegevens-p">Voornaam*:</p>
         <input class="formInput" type="text">
+        <p class="basisgegevens-p">Achternaam*:</p>
+        <input class="formInput" type="text">
+        <p class="basisgegevens-p">Email*:</p>
+        <input class="formInput" type="text">
+        <p class="basisgegevens-p">Telefoonnummer:</p>
+        <input class="formInput" type="text">
+        <p class="basisgegevens-p">Organisatie:</p>
+        <input class="formInput" type="text">
+
         <br/><hr>
-        <p>Blae:</p>
+        <h2>Evenement gegevens</h2>
+        <p class="basisgegevens-p">Naam evenement*:</p>
         <input class="formInput" type="text">
+        <p class="basisgegevens-p">hier moet nog data toegevoegd kunnen worden</p>
         <br/><hr>
         <button type="submit">Verder</button>
       </form>
