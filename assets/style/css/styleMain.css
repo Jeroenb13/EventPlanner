@@ -614,6 +614,7 @@ hr{
 }
 
 .formInput {
+    height: 18px;
     width: 208px;
     padding: 8px 10px;
     margin: 5px 0;
