@@ -1,13 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: forsel
- * Date: 23-11-2017
- * Time: 11:44
- */
-
-?>
-
 <form id="inputForm" method="post" action="">
     <p>Naam:</p>
     <input type="text" name="nameInput">
