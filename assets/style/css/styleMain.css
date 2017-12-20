@@ -623,16 +623,43 @@ hr{
     border: hidden;
 }
 
-.formInput:focus{
-    border: 2px solid #23507d ;
-}
-
 .formSelect {
     padding: 8px 10px;
     margin: 5px 0;
     border: none;
     border-radius: 4px;
     background-color: #f2f2f2;
+}
+
+/*.question{*/
+    /*height: 15px;*/
+    /*width: 15px;*/
+    /*background-color: #d8d8d8;*/
+    /*float: right;*/
+    /*font-size: 12px;*/
+    /*margin-right: 600px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*#explanation{*/
+    /*height: 100px;*/
+    /*width: 140px;*/
+    /*visibility: collapse;*/
+/*}*/
+
+.image{
+    background-image: url("../../images/vraagteken.png");
+    height:15px;
+    width:15px;
+    display: block;
+}
+
+.image  a {
+    display: none;
+}
+
+.image  a:hover {
+    display: block;
 }
 
 /* END OF FORMULIEREN STYLE */
