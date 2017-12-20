@@ -1,4 +1,5 @@
-        </div>
+</div>
+</div>
     </body>
     <script>
       function showNav(){

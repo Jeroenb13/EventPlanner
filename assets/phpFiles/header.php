@@ -27,6 +27,7 @@ Inhoud:
             <option value="kaart" <?php if($page == "kaart"){echo "selected";}?>>Kaart</option>
             <option value="onderdelen" <?php if($page == "onderdelen"){echo "selected";}?>>Onderdelen</option>
             <option value="404" <?php if($page == "404"){echo "selected";}?>>Page not found</option>
+            <option value="moveBoxes" <?php if($page == "moveBoxes"){header ( "Location: moveBoxes/Test/start.html"); die;}?>>MoveBoxes</option>
         </select>
     </form>
 
