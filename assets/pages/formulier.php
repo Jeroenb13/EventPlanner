@@ -53,7 +53,11 @@ Inhoud:
 
         <div id="inputForm">
             <form method="post" action="">
-            <p>Categorie*:</p>
+                <hr>
+            <p class="tooltip">Categorie*:
+                <span class="tooltiptext">Kies hier de juiste categorie waaronder uw object past.</span>
+            </p>
+
             <select class="formSelect" name="inputCat" id="inputCat">
                 <option value="bierpompen">Bierpompen</option>
                 <option value="eetkramen">eet- en drankkramen</option>
@@ -72,9 +76,6 @@ Inhoud:
 
                 <hr>
                 <p>Naam*:</p>
-                <div class="image"><a href="#">Text you want on mouseover</a></div>
-<!--                <div class="question">?</div>-->
-<!--                <p id="explanation">Kies hier een naam voor uw object</p>-->
             <input class="formInput" type="text" name="nameInput">
             <br/><hr>
 
@@ -145,14 +146,6 @@ Inhoud:
                         }
                     });
 
-//                    var $question = $(".question");
-//                    var $expl = $("#explanation");
-//
-//                    $question.mouseenter(function()
-//                    {
-//                        $expl.show();
-//                    });
-
                 });
             </script>
 
@@ -214,7 +207,7 @@ Inhoud:
 
             <p>Extra bijzonderheden:</p>
             <input class="formInput" type="text" name="facBijzonderheden">
-            <br/>
+            <br/><hr>
             </div>
 
             <!--Voor het podia-->
@@ -262,7 +255,7 @@ Inhoud:
 
             <p>Certificaat uploaden:</p>
             <input type="file" name="podiaCertificaat" id="podiaCertificaat">
-            <br/>
+            <br/><hr>
             </div>
 
             <!--Voor de tenten-->
@@ -310,7 +303,7 @@ Inhoud:
 
             <p>Certificaat uploaden*:</p>
             <input type="file" name="tentCertificaat" id="tentCertificaat">
-            <br/>
+            <br/><hr>
             </div>
 
             <!--Voor de barricades-->
@@ -340,7 +333,7 @@ Inhoud:
 
             <p>Lengte:</p>
             <input class="formInput" type="text" name="hogeHekLengte">
-            <br/>
+            <br/><hr>
             </div>
 
             <!--Als lage hekken worden gekozen-->
@@ -352,6 +345,7 @@ Inhoud:
             <p>Lengte:</p>
             <input class="formInput" type="text" name="lageHekLengte">
             <br/>
+                <hr>
             </div>
         </div>
 
