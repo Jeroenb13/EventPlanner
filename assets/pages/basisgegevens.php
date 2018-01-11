@@ -6,6 +6,9 @@
     <div id="nav">
         <ul>
           <li><a onclick="showNav()">☰</a></li>
+          <li><a id="loginDropdown-click" href="#" onclick="showLoginInfo()"><i class="icon-user nav-user-icon"></i></a>
+              <div id="loginDropdown"><p id="ingelogdAls">Ingelogd als:</p> <p id="IngelogdNaam">Jan Jansman</p></div>
+          </li>
           <li><a href="?page=kaart">Kaart</a></li>
           <li><a href="?page=onderdelen">Onderdelen</a></li>
           <li><a href="?page=basisgegevens">Basisgegevens</a></li>
@@ -18,6 +21,13 @@
         <li><a href="?page=onderdelen">Onderdelen</a></li>
         <div class="nav-divider"></div>
         <li><a href="?page=kaart">Kaart</a></li>
+        <div class="nav-divider"></div>
+
+        <div id="nav-overlay-loginDropdown">
+          <p id="ingelogdAls">Ingelogd als:</p>
+          <p id="IngelogdNaam">Jan Jansman</p>
+        </div>
+
       </ul>
     </div>
 
@@ -46,10 +56,26 @@
         <h2>Evenement gegevens</h2>
         <p class="basisgegevens-p">Naam evenement*:</p>
         <input class="formInput" type="text">
-        <p class="basisgegevens-p">hier moet nog data toegevoegd kunnen worden</p>
+        <p class="basisgegevens-p">Datum/data evenement:</p>
+        <input type="date" class="formInput"><a class="formAddButton" onclick="addDate">+</a>
+        <p class="formAddDate"></p>
         <br/><hr>
         <button type="submit">Verder</button>
       </form>
+
+      <script>
+        function addDate(){
+          $(".formAddDate:last").after("<input type='date' class='formInput formAddDate'>");
+        }
+        /* Display login info on click, for mobile users*/
+        function showLoginInfo(){
+          if($("#loginDropdown").is(":visible")){
+            $("#loginDropdown").css("display","none");
+          }else{
+            $("#loginDropdown").css("display","block");
+          }
+        }
+      </script>
 
     </div>
   </div>
