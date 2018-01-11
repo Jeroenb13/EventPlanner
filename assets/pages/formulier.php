@@ -41,7 +41,7 @@ Inhoud:
 
         <div id="inputForm">
             <form method="post" action="">
-            <p>Categorie:</p>
+            <p>Categorie*:</p>
             <select class="formSelect" name="inputCat" id="inputCat">
                 <option value="bierpompen">Bierpompen</option>
                 <option value="eetkramen">eet- en drankkramen</option>
@@ -59,7 +59,10 @@ Inhoud:
             </select>
 
                 <hr>
-            <p>Naam:</p>
+                <p>Naam*:</p>
+                <div class="image"><a href="#">Text you want on mouseover</a></div>
+<!--                <div class="question">?</div>-->
+<!--                <p id="explanation">Kies hier een naam voor uw object</p>-->
             <input class="formInput" type="text" name="nameInput">
             <br/><hr>
 
@@ -129,8 +132,16 @@ Inhoud:
                             $hogeHekken.hide();
                         }
                     });
-                });
 
+//                    var $question = $(".question");
+//                    var $expl = $("#explanation");
+//
+//                    $question.mouseenter(function()
+//                    {
+//                        $expl.show();
+//                    });
+
+                });
             </script>
 
             <!--Voor de eerste 9 faciliteiten-->
@@ -139,25 +150,25 @@ Inhoud:
             <input class="formInput" type="text" name="soort">
             <br/><hr>
 
-            <p>Oppervlakte:</p>
+            <p>Oppervlakte*:</p>
             <input  type="radio" name="facOppervlakte" value="facCirkel"> Circel
             <input type="radio" name="facOppervlakte" value="facVierkant"> Vierkant
             <br/><hr>
-            <p>Lengte:</p>
+            <p>Lengte*:</p>
             <input class="formInput" type="text" name="facLengte"> cm
             <br/><hr>
-            <p>Breedte:</p>
+            <p>Breedte*:</p>
             <input class="formInput" type="text" name="facBreedte"> cm
             <br/><hr>
-            <p>Diameter:</p>
+            <p>Diameter*:</p>
             <input class="formInput" type="text" name="facDiameter">
             <br/><hr>
 
-            <p>Hoogte:</p>
+            <p>Hoogte*:</p>
             <input class="formInput" type="text" name="facHoogte">
             <br/><hr>
 
-            <p>Gewicht:</p>
+            <p>Gewicht*:</p>
             <input class="formInput" type="text" name="facGewicht">
             <br/><hr>
 
@@ -169,22 +180,22 @@ Inhoud:
             <input class="formInput" type="text" name="extraBreedte">
             <br/><hr>
 
-            <p>Elektriciteit:</p>
+            <p>Elektriciteit*:</p>
             <input type="radio" name="facElektriciteit" value="ja"> Ja
             <input type="radio" name="facElektriciteit" value="nee"> Nee
             <br/><hr>
 
-            <p>Gas:</p>
+            <p>Gas*:</p>
             <input type="radio" name="facGas" value="ja"> Ja
             <input type="radio" name="facGas" value="nee"> Nee
             <br/><hr>
 
-            <p>Water:</p>
+            <p>Water*:</p>
             <input type="radio" name="facWater" value="ja"> Ja
             <input type="radio" name="facWater" value="nee"> Nee
             <br/><hr>
 
-            <p>Open vuur:</p>
+            <p>Open vuur*:</p>
             <input type="radio" name="facVuur" value="ja"> Ja
             <input type="radio" name="facVuur" value="nee"> Nee
             <br/><hr>
@@ -196,18 +207,18 @@ Inhoud:
 
             <!--Voor het podia-->
             <div class="podia">
-            <p>Beschikbare podia</p>
-            <select class="formSelect" name="beschikbarePodia">
-                <option value="podiumEen">podium 1</option>
-                <option value="podiumTwee">podium 2</option>
-                <option value="podiumDrie">podium 3</option>
-            </select><hr>
+<!--            <p>Beschikbare podia:</p>-->
+<!--            <select class="formSelect" name="beschikbarePodia">-->
+<!--                <option value="podiumEen">podium 1</option>-->
+<!--                <option value="podiumTwee">podium 2</option>-->
+<!--                <option value="podiumDrie">podium 3</option>-->
+<!--            </select><hr>-->
 
-            <p>Soort:</p>
+            <p>Soort*:</p>
             <input class="formInput" type="text" name="podiaSoort">
             <br/><hr>
 
-            <p>Oppervlakte:</p>
+            <p>Oppervlakte*:</p>
             <input type="radio" name="podiaOppervlakte" value="podiaCirkel"> Circel
             <input type="radio" name="podiaOppervlakte" value="podiaVierkant"> Vierkant
             <br/><hr>
@@ -244,18 +255,18 @@ Inhoud:
 
             <!--Voor de tenten-->
             <div class="tenten">
-            <p>Beschikbare tenten</p>
-            <select class="formSelect" name="beschikbarePodia">
-                <option value="tentEen">Bierpompen</option>
-                <option value="tentTwee">eet- en drankkramen</option>
-                <option value="tentDrie">Toiletten</option>
-            </select><hr>
+<!--            <p>Beschikbare tenten</p>-->
+<!--            <select class="formSelect" name="beschikbarePodia">-->
+<!--                <option value="tentEen">Bierpompen</option>-->
+<!--                <option value="tentTwee">eet- en drankkramen</option>-->
+<!--                <option value="tentDrie">Toiletten</option>-->
+<!--            </select><hr>-->
 
-            <p>Soort:</p>
+            <p>Soort*:</p>
             <input class="formInput" type="text" name="tentSoort">
             <br/><hr>
 
-            <p>Oppervlakte:</p>
+            <p>Oppervlakte*:</p>
             <input type="radio" name="tentOppervlakte" value="tentCirkel"> Circel
             <input type="radio" name="tentOppervlakte" value="tentVierkant"> Vierkant
             <br/><hr>
@@ -269,30 +280,30 @@ Inhoud:
             <input class="formInput" type="text" name="tentDiameter">
             <br/><hr>
 
-            <p>Hoogte:</p>
+            <p>Hoogte*:</p>
             <input class="formInput" type="text" name="tentHoogte">
             <br/><hr>
 
-            <p>Gewicht:</p>
+            <p>Gewicht*:</p>
             <input class="formInput" type="text" name="tentGewicht">
             <br/><hr>
 
-            <p>Naam bedrijf:</p>
+            <p>Naam bedrijf*:</p>
             <input class="formInput" type="text" name="tentBedrijfsnaam">
             <br/><hr>
 
-            <p>Bouwteking uploaden:</p>
+            <p>Bouwteking uploaden*:</p>
             <input type="file" name="tentBouwtekening" id="tentBouwtekening">
             <br/><hr>
 
-            <p>Certificaat uploaden:</p>
+            <p>Certificaat uploaden*:</p>
             <input type="file" name="tentCertificaat" id="tentCertificaat">
             <br/>
             </div>
 
             <!--Voor de barricades-->
             <div class="barricades">
-            <p>Soort:</p>
+            <p>Soort*:</p>
             <select class="formSelect" name="barrSoort" id="barrSoort">
                 <option value="hogeHekken" id="hogeHekken">Hoge hekken</option>
                 <option value="lageHekken" id="lageHekken">Lage hekken</option>
@@ -300,13 +311,13 @@ Inhoud:
             </select>
             <br/><hr>
 
-            <p>Hoeveelheid:</p>
+            <p>Hoeveelheid*:</p>
             <input class="formInput" type="text" name="barrOppervlakte">
             <br/><hr>
 
             <!--Als hoge hekken worden gekozen-->
                 <div class="hogeHekken">
-            <p>Geblindeerd hekwerk:</p>
+            <p>Geblindeerd hekwerk*:</p>
             <input type="radio" name="blinderen" value="blindJa"> Ja
             <input type="radio" name="blinderen" value="blindNee"> Nee
             <br/><hr>
