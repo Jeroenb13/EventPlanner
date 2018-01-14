@@ -34,7 +34,10 @@ if(!isset($_SESSION["cl"])){
         .           "<div id=\"nav\">"
         .               "<ul>"
         .                   "<li><a onclick=\"showNav()\">☰</a></li>"
-        .                   "<li><a href=\"?page=profiel\">Profiel</a></li>";
+        .                   "<li><a id=\"loginDropdown-click\" href=\"#\" onclick=\"showLoginInfo()\"><i class=\"icon-user nav-user-icon\"></i></a>"
+        .                   "<div id=\"loginDropdown\"> <p id=\"IngelogdNaam\">Jan Jansman</p>"
+        .                   "<a class=\"login-dropdown-a\">Profiel<i class=\"icon-pencil\"></i></a> <a class=\"login-dropdown-a\">Uitloggen<i class=\"icon-logout\"></i></a> </div>"
+        .                   "</li>";
         if($_SESSION["cl"] == 2) {
             echo            "<li><a href=\"?page=accounts\">Accounts</a></li>";
         }
@@ -43,13 +46,17 @@ if(!isset($_SESSION["cl"])){
         .           "</div>"
         .           "<div id=\"nav-overlay\">"
         .               "<ul>"
-        .                   "<li><a href=\"?page=profiel\">Profiel</a></li>"
+        .                   "<li><a href=\"?page=overzicht\">Overzicht</a></li>"
         .                   "<div class=\"nav-divider\"></div>";
         if($_SESSION["cl"] == 2) {
             echo            "<li><a href=\"?page=accounts\">Accounts</a></li>"
                 .           "<div class=\"nav-divider\"></div>";
         }
-        echo                "<li><a href=\"?page=overzicht\">Overzicht</a></li>"
+        echo                "<li class=\"nav-overlay-user-li\">"
+        .                   "<i class=\"icon-user nav-overlay-icon-user\"></i><p id=\"nav-overlay-ingelogdNaam\">Jan Jansman</p>"
+        .                   "<a class=\"nav-overlay-login-a\">Profiel<i class=\"icon-pencil\"></i></a>"
+        .                   "<a class=\"nav-overlay-login-a\">Uitloggen<i class=\"icon-logout\"></i></a>"
+        .                  "</li>"
         .               "</ul>"
         .           "</div>"
         .           "<div id=\"page-container\">"

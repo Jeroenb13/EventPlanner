@@ -227,7 +227,7 @@ and (min-resolution:.001dpcm) {
     border-left: 1px solid #d8d8d8;
 }
 
-#nav > ul > li a:last-of-type{
+#nav > ul > li > a:last-of-type{
     border-right: 1px solid #d8d8d8;
 }
 
@@ -243,10 +243,11 @@ and (min-resolution:.001dpcm) {
   color:  #001241;
 }
 #loginDropdown{
+  text-align: right;
   display: none;
-  height: 55px;
   margin-left: calc(-125px + 66px);
-  width: 125px;
+  width: 115px;
+  padding: 5px;
   position: absolute;
   background-color: #f8f8f8;
   border: 1px solid #d8d8d8;
@@ -255,30 +256,31 @@ and (min-resolution:.001dpcm) {
 #loginDropdown-click:hover + #loginDropdown, #loginDropdown:hover{
     display: block;
 }
-#ingelogdAls{
-  margin-top: 5px;
-}
 #IngelogdNaam{
   font-weight: 400;
 }
-
+.login-dropdown-a{
+  font-size: 1rem;
+  color: #001241;
+  border-right: 0;
+}
+.login-dropdown-a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 .nav-divider{
   width: 95%;
   margin-left: 2.5%;
   height: 1px;
   background-color: #d8d8d8;
 }
+
 #nav-overlay{
   height: 0.1px;
   background-color: #f8f8f8;
   border-bottom: 1px solid #d8d8d8;
-  text-align: right;
   width: 100%;
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 #nav-overlay > ul{
     list-style-type: none;
@@ -306,6 +308,26 @@ and (min-resolution:.001dpcm) {
 #upperbar{
     height: 5px;
     background-color: #23507d;
+}
+
+#nav-overlay > ul > li > a.nav-overlay-login-a{
+  padding: 4px 0px;
+  font-size: 12pt;
+  color: #001241;
+  cursor: pointer;
+}
+.nav-overlay-icon-user{
+  font-size: 16pt;
+  color: #001241;
+  margin-top: 10px;
+}
+#nav-overlay-ingelogdNaam{
+  margin-bottom: 4px;
+  font-size: 13pt;
+  font-weight: 400;
+}
+.nav-overlay-user-li{
+  margin-top: 5px;
 }
 
 @media (max-width: 1200px) {
