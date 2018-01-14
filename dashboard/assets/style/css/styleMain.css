@@ -58,6 +58,11 @@ h2{
     font-weight: 100;
     letter-spacing: -1px;
 }
+/* Chrome fontweight fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+h2{font-weight: 300;}
+}
 
 p{
     font-size: 1rem;
