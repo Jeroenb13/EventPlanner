@@ -431,11 +431,36 @@ and (min-resolution:.001dpcm) {
     overflow-y: scroll;
 }
 
-#map{
+.map{
     height: 500px;
     width: 60%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+#basislagen-pane {
+    box-sizing: border-box;
+    padding: 0 20px;
+    font: 20px Arial;
+    text-align: left;
+}
+
+#themalagen-pane {
+    box-sizing: border-box;
+    padding: 0 20px;
+    font: 20px Arial;
+    text-align: left;
+}
+
+#js-basislagen {
+    font: 14px Arial;
+    list-style-type:none;
+    left: -20px;
+}
+
+#js-themalagen {
+    font: 14px Arial;
+    list-style-type:none;
+    left: -20px;
 }
 
 /* Objectlist next to the map */
@@ -458,6 +483,8 @@ and (min-resolution:.001dpcm) {
     align-items: center;
     display: flex;
 }
+
+
 .objectDisplay{
     /* FOR TESTING PURPOSES TODO: Remove */
     width: 50px;
