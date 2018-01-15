@@ -1,13 +1,22 @@
 <?php
+/*$stmt2 = $db->prepare("INSERT INTO UserData (`UserName`, `Password`, `Type`)VALUES (?, ?, ?)");
+$pass = "dinges22";
+$un = "Fepadro";
+$prehash = $un . $pass;
+$hash = password_hash($prehash, PASSWORD_BCRYPT);
+$stmt2 -> execute(array($un, $hash, 2));
+echo "test";
+$stmt2 -> closeCursor();*/
 $error = '';
 $hash = "";
 $cLevel = 0;// Variabel om Errors op te slaan.
-if (isset($_POST['submit']))
+$check = true;
+if(isset($_POST['submit']))
 {
 
-    if (empty($_POST['uName']) || empty ($_POST['pWord']))
+    if(empty($_POST['uName']) || empty ($_POST['pWord']))
     {
-        $error = "Gebruikersnaam en wachtwoord ongeldig";
+        $error = "Gebruikersnaam en/of wachtwoord ongeldig";
     } else
     {
         $un = $_POST['uName'];
@@ -15,29 +24,37 @@ if (isset($_POST['submit']))
 
         // Gebruikerscode en ww pakken
 
-        $stmt = $db->prepare("SELECT 'cLevel' + 'pWord' FROM gebruiker WHERE uName = '{$un}';");
-
+        $stmt = $db->prepare("SELECT * FROM UserData WHERE UserName = ?;");
+        $stmt -> execute(array($un));
         while($row = $stmt -> fetch())
         {
-            $cLevel = $row['cLevel'];
-            $hash = $row['pWord'];
+            $cLevel = $row['Type'];
+            $hash = $row['Password'];
+            $check = password_verify($pw, $hash);
         }
-
-        if(password_verify($pw, $hash))
+        echo $cLevel . "<br>";
+        echo $hash . "<br>";
+        echo $pw . "<br>";
+        echo $check . "<br>";
+        echo strlen($hash). "<br>";
+        if($check)
         {
             $_SESSION['UserName'] = $un;
             $_SESSION['CLevel'] = $cLevel;
+            $_SESSION["loggedin"] = true;
             $hash = "";
             $pw = "";
-            echo "password valid";
+            $error = "password valid";
+            header("Location: dashboard/index.php");
+            die;
 
+        }else{
+            $error = "Gebruikersnaam en/of wachtwoord ongeldig";
         }
     }
 
 }
-if(password_verify("hoi", $hash)){
-    echo "<p>pass valid</p>";}
-else{"<p>Piet</p>";}
+echo $error;
 ?>
 
 <!--
@@ -66,3 +83,6 @@ Inhoud:
 
     <div class="spacer"></div>
     <a class="wwVergetenLink" href="?page=wachtwoordVergeten">Wachtwoord vergeten?</a>
+<?php
+$stmt ->closeCursor();
+?>

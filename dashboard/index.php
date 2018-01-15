@@ -1,7 +1,6 @@
 <?php
 session_start();
-$_SESSION["loggedin"] = true;
-
+echo $_SESSION["loggedin"];
 if(!$_SESSION["loggedin"] || !isset($_SESSION["loggedin"])){
 
     header("Location: ../index.php");
