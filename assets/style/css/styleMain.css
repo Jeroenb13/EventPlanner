@@ -9,13 +9,6 @@
    - Basisgegevens Style
 */
 
-/* REMOVE: */
-@media (max-width: 550px) {
-    #testoverlay{
-      display: none;
-    }
-}
-
 /* MAIN STYLE */
 *{
     margin: 0;
@@ -75,6 +68,11 @@ h2{
     color: #001241;
     font-weight: 100;
     letter-spacing: -1px;
+}
+/* Chrome fontweight fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+h2{font-weight: 300;}
 }
 
 p{
@@ -227,7 +225,7 @@ and (min-resolution:.001dpcm) {
     border-left: 1px solid #d8d8d8;
 }
 
-#nav > ul > li:nth-last-child(3){
+#nav > ul > li > a:last-of-type{
     border-right: 1px solid #d8d8d8;
 }
 
@@ -238,23 +236,49 @@ and (min-resolution:.001dpcm) {
   margin-top: -2px;
   display: none;
 }
+
+.nav-user-icon{
+  color:  #001241;
+}
+#loginDropdown{
+  text-align: right;
+  display: none;
+  margin-left: calc(-125px + 66px);
+  width: 115px;
+  padding: 5px;
+  position: absolute;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+
+#loginDropdown-click:hover + #loginDropdown, #loginDropdown:hover{
+    display: block;
+}
+#IngelogdNaam{
+  font-weight: 400;
+}
+.login-dropdown-a{
+  font-size: 1rem;
+  color: #001241;
+  border-right: 0;
+}
+.login-dropdown-a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 .nav-divider{
   width: 95%;
   margin-left: 2.5%;
   height: 1px;
   background-color: #d8d8d8;
 }
+
 #nav-overlay{
   height: 0.1px;
   background-color: #f8f8f8;
   border-bottom: 1px solid #d8d8d8;
-  text-align: right;
   width: 100%;
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 #nav-overlay > ul{
     list-style-type: none;
@@ -284,6 +308,26 @@ and (min-resolution:.001dpcm) {
     background-color: #23507d;
 }
 
+#nav-overlay > ul > li > a.nav-overlay-login-a{
+  padding: 4px 0px;
+  font-size: 12pt;
+  color: #001241;
+  cursor: pointer;
+}
+.nav-overlay-icon-user{
+  font-size: 16pt;
+  color: #001241;
+  margin-top: 10px;
+}
+#nav-overlay-ingelogdNaam{
+  margin-bottom: 4px;
+  font-size: 13pt;
+  font-weight: 400;
+}
+.nav-overlay-user-li{
+  margin-top: 5px;
+}
+
 @media (max-width: 1200px) {
     #container{
         width: 55%;
@@ -302,7 +346,7 @@ and (min-resolution:.001dpcm) {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     #container{
         width: 100%;
     }
@@ -623,16 +667,43 @@ hr{
     border: hidden;
 }
 
-.formInput:focus{
-    border: 2px solid #23507d ;
-}
-
 .formSelect {
     padding: 8px 10px;
     margin: 5px 0;
     border: none;
     border-radius: 4px;
     background-color: #f2f2f2;
+}
+
+/*.question{*/
+    /*height: 15px;*/
+    /*width: 15px;*/
+    /*background-color: #d8d8d8;*/
+    /*float: right;*/
+    /*font-size: 12px;*/
+    /*margin-right: 600px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*#explanation{*/
+    /*height: 100px;*/
+    /*width: 140px;*/
+    /*visibility: collapse;*/
+/*}*/
+
+.image{
+    background-image: url("../../images/vraagteken.png");
+    height:15px;
+    width:15px;
+    display: block;
+}
+
+.image  a {
+    display: none;
+}
+
+.image  a:hover {
+    display: block;
 }
 
 /* END OF FORMULIEREN STYLE */
@@ -646,6 +717,19 @@ hr{
 
 .basisgegevens-p{
   margin-top: 10px;
+}
+
+.formAddButton{
+  font-size: 16pt;
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  margin-left: 5px;
+  border-radius: 4px;
+  background-color: #23507d;
+  color: white;
+  border: hidden;
 }
 
 /* END OF BASISGEGEVENS STYLE */
