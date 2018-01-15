@@ -98,23 +98,23 @@
 
         </div>
 
-        <div id="map">
-            <style>
-                .embed-container
-                {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;}
-                .embed-container iframe, .embed-container object, .embed-container
-                iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-                small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
-            </style>
-            <div class="embed-container">
+        <div id="js-map" class="map"></div>
+        <div class="pane">
+            <div id="themalagen-pane" class="pane">
+                <p>Themalagen</p>
+                <ul id="js-themalagen" class="layers"></ul>
+            </div>
+            <div id="basislagen-pane" class="pane">
+                <p>Basislagen</p>
+                <ul id="js-basislagen" class="layers">
+                </ul>
+            </div>
+            <div id="js-feature-info" class="feature-info"></div>
+        </div>
                 <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
                 <script src="assets/scripts/Evenementenvergunning.js"></script>
-            </div>
-        <script>
-            //AIzaSyBZHKVcs3VGPaxnuiQNFjOKL741xKu_vag api sleutel voor googlemaps
-        </script>
-        </div>
+
     </div>
 
 

@@ -1,5 +1,5 @@
 window.onload = function() {
-    if(!window.location.hash) {
+    if (!window.location.hash) {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
@@ -8,7 +8,7 @@ window.onload = function() {
 
     var stage = new Konva.Stage({
         container: 'container',
-        width: 500,
+        width: 700,
         height: 500
     });
 
@@ -24,25 +24,78 @@ window.onload = function() {
 
     var background = new Image();
     background.src = 'images/Basic.png';
-    stage.add(backlayer);
 
-    drawBackground(backlayer, background);
+    //stage.add(backlayer);
+
+    var simpleText = new Konva.Text({
+        x: 560,
+        y: 20,
+        text: 'Etenskraam',
+        fontSize: 20,
+        fontFamily: 'Calibri',
+        fill: 'black'
+    });
+
+    var simpleTextTwo = new Konva.Text({
+        x: 550,
+        y: 120,
+        text: 'Etenskraam',
+        fonSize: 20,
+        fontFamily: 'Calibri',
+        fill: 'black'
+    });
+
+    layer.add(simpleText);
+    layer.add(simpleTextTwo);
 
     var array = 2;
     var blockArray = [];
     var sessionArray = JSON.parse(sessionStorage.getItem("inputArray"));
     console.log(sessionArray);
-    sessionArray.forEach(iterateArray)
+    buildpage();
 
-    function iterateArray(item, index)
+    function buildpage()
     {
+        createBackGroundRect();
+        sessionArray.forEach(iterateArray);
+        blockArray.forEach(buildEventHandlers);
+        stage.add(backlayer);
+        stage.add(layer);
+    }
+
+    function iterateArray(item, index) {
         addBox(item.width, item.height, item.color);
     }
 
-    function addBox(widthinput, heightinput, color){
+
+    function createBackGroundRect()
+    {
+        var backGroundRect = new Konva.Rect({
+            x: 0,
+            y: 0,
+            width: stage.getWidth(),
+            height: stage.getHeight(),
+            fillPaternImage: background,
+            fillPaternOffset: { x: 0, y: 0},
+            draggable: false
+        });
+        console.log("Hi");
+        layer.add(backGroundRect);
+    }
+
+    function addBox(widthinput, heightinput, color) {
+
+        if(color == "red")
+        {
+            yHeight = 80;
+        }else if(color == "blue")
+        {
+            yHeight = 200;
+        }
+
         var boxrect = new Konva.Rect({
-            x: 40,
-            y: 40,
+            x: 560,
+            y: yHeight,
             width: widthinput,
             height: heightinput,
             fill: color,
@@ -51,19 +104,17 @@ window.onload = function() {
             draggable: true,
             shadowColor: 'black',
             shadowBlur: 10,
-            offset: {x: widthinput/2, y: heightinput/2},
-            shadowOffset: {x : 10, y : 10},
+            offset: {x: widthinput / 2, y: heightinput / 2},
+            shadowOffset: {x: 10, y: 10},
             shadowOpacity: 0.5,
             active: false,
             id: "null"
         });
         blockArray.push(boxrect);
         layer.add(boxrect);
-        stage.add(layer);
     }
 
-    if(debug === true)
-    {
+    if (debug === true) {
         var box = new Konva.Rect({
             x: rectX,
             y: rectY,
@@ -75,7 +126,7 @@ window.onload = function() {
             draggable: true,
             shadowColor: 'black',
             shadowBlur: 10,
-            shadowOffset: {x : 10, y : 10},
+            shadowOffset: {x: 10, y: 10},
             shadowOpacity: 0.5,
             active: false,
             id: "null"
@@ -92,7 +143,7 @@ window.onload = function() {
             draggable: true,
             shadowColor: 'black',
             shadowBlur: 10,
-            shadowOffset: {x : 10, y : 10},
+            shadowOffset: {x: 10, y: 10},
             shadowOpacity: 0.5,
             active: false,
             id: "null"
@@ -101,28 +152,27 @@ window.onload = function() {
         blockArray.push(boxTwo);
     }
 
-for(var num = 0; num < array; num++)
-{
-    blockArray[num].on('mouseover', function() {
-        document.body.style.cursor = 'pointer';
-    });
-    blockArray[num].on('mouseout', function() {
-        document.body.style.cursor = 'default';
-    });
+    function buildEventHandlers(item, index) {
+        item.on('mouseover', function () {
+            document.body.style.cursor = 'pointer';
+        });
+        item.on('mouseout', function () {
+            document.body.style.cursor = 'default';
+        });
 
-    blockArray[num].on('mousedown', function() {
-        document.body.style.cursor = 'default';
-        this.stroke('red');
-        this.active = true;
-        console.log(this.active);
-    });
-    blockArray[num].on('mouseup', function() {
-        document.body.style.cursor = 'default';
-        console.log(this.active);
-    });
-}
+        item.on('mousedown', function () {
+            document.body.style.cursor = 'default';
+            this.stroke('red');
+            this.active = true;
+            console.log(this.active);
+        });
+        item.on('mouseup', function () {
+            document.body.style.cursor = 'default';
+            console.log(this.active);
+        });
+    }
 
-    $('#plus').click(function() {
+    $('#plus').click(function () {
         var addedWidth = document.getElementById('width').value;
         var addedHeight = document.getElementById('height').value;
         var addedColor = document.getElementById('color').value;
@@ -130,56 +180,47 @@ for(var num = 0; num < array; num++)
         document.getElementById('addForm').reset();
     })
 
-    $("#rotateR").click(function () {
-        var inputArray = stage.find('Rect');
-        
-        var found = findActive(inputArray);
-
-        if(found != undefined)
-        {
-        found.rotate(500 * Math.PI / 180);
-         layer.draw();
-         console.log("Hup");
-        }
-     });
-     $("#rotateL").click(function () {
+    $("#rotateR").click(function(){
         var inputArray = stage.find('Rect');
 
         var found = findActive(inputArray);
 
-        if(found != undefined){
-        found.rotate(-(500 * Math.PI / 180));
-         layer.draw();
-         console.log("Hup");
+        if (found != undefined) {
+            found.rotate(500 * Math.PI / 180);
+            layer.draw();
+            console.log("HupR");
         }
-     });
-     $("#deselect").click(function() {
+    });
+    $("#rotateL").click(function(){
+        console.log("ja");
+        var inputArray = stage.find('Rect');
+
+        var found = findActive(inputArray);
+
+        if (found != undefined) {
+            found.rotate(-(500 * Math.PI / 180));
+            layer.draw();
+            console.log("HupL");
+        }
+    });
+    $("#deselect").click(function () {
         deactivateAll(blockArray);
-     })
+        backlayer.moveToBottom();
+    });
 
-     function findActive(activeArray)
-     {
-        for(j = 0; j < array; j++)
-        {
-            if(activeArray[j].active === true)
-            {
+    function findActive(activeArray) {
+        for (j = 0; j < array; j++) {
+            if (activeArray[j].active === true) {
                 return activeArray[j];
             }
         }
-     }
+    }
 
-     function deactivateAll(activeArray)
-     {
-        for(j = 0; j < array; j++)
-        {
-            activeArray[j].stroke('black');
+    function deactivateAll(activeArray) {
+        for (j = 0; j < array; j++) {
             activeArray[j].active = false;
+            activeArray[j].stroke('black');
             console.log(activeArray[j].stroke);
         }
-     }
-
-     function drawBackground(backlayer, background) {
-         var context = backlayer.getContext();
-         context.drawImage(background, 0, 0);
-         context.setAttr("fillStyle", "white");
-     }
+    }
+}

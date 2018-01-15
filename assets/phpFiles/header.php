@@ -19,7 +19,6 @@ Inhoud:
 
         <!--Scripts voor de kaart-->
         <link rel="stylesheet" href="assets/style/css/ol.css">
-        <link rel="stylesheet" href="assets/style/css/Evenementenvergunning.css">
     </head>
 
     <body>
