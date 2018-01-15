@@ -30,6 +30,7 @@ if(isset($_POST['submit']))
         {
             $cLevel = $row['Type'];
             $hash = $row['Password'];
+            $uid = $row["UserID"];
             $check = password_verify($pw, $hash);
         }
         echo $cLevel . "<br>";
@@ -42,6 +43,7 @@ if(isset($_POST['submit']))
             $_SESSION['UserName'] = $un;
             $_SESSION['CLevel'] = $cLevel;
             $_SESSION["loggedin"] = true;
+            $_SESSION["UID"] = $uid;
             $hash = "";
             $pw = "";
             $error = "password valid";
@@ -52,7 +54,7 @@ if(isset($_POST['submit']))
             $error = "Gebruikersnaam en/of wachtwoord ongeldig";
         }
     }
-
+    $stmt ->closeCursor();
 }
 echo $error;
 ?>
@@ -83,6 +85,3 @@ Inhoud:
 
     <div class="spacer"></div>
     <a class="wwVergetenLink" href="?page=wachtwoordVergeten">Wachtwoord vergeten?</a>
-<?php
-$stmt ->closeCursor();
-?>
