@@ -8,7 +8,7 @@ window.onload = function() {
 
     var stage = new Konva.Stage({
         container: 'container',
-        width: 500,
+        width: 700,
         height: 500
     });
 
@@ -27,6 +27,26 @@ window.onload = function() {
 
     //stage.add(backlayer);
 
+    var simpleText = new Konva.Text({
+        x: 560,
+        y: 20,
+        text: 'Etenskraam',
+        fontSize: 20,
+        fontFamily: 'Calibri',
+        fill: 'black'
+    });
+
+    var simpleTextTwo = new Konva.Text({
+        x: 550,
+        y: 120,
+        text: 'Etenskraam',
+        fonSize: 20,
+        fontFamily: 'Calibri',
+        fill: 'black'
+    });
+
+    layer.add(simpleText);
+    layer.add(simpleTextTwo);
 
     var array = 2;
     var blockArray = [];
@@ -47,6 +67,7 @@ window.onload = function() {
         addBox(item.width, item.height, item.color);
     }
 
+
     function createBackGroundRect()
     {
         var backGroundRect = new Konva.Rect({
@@ -63,9 +84,18 @@ window.onload = function() {
     }
 
     function addBox(widthinput, heightinput, color) {
+
+        if(color == "red")
+        {
+            yHeight = 80;
+        }else if(color == "blue")
+        {
+            yHeight = 200;
+        }
+
         var boxrect = new Konva.Rect({
-            x: 40,
-            y: 40,
+            x: 560,
+            y: yHeight,
             width: widthinput,
             height: heightinput,
             fill: color,
