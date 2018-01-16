@@ -7,7 +7,7 @@ window.onload = function() {
     var height = window.innerHeight;
 
     var stage = new Konva.Stage({
-        container: 'container',
+        container: 'konvaContainer',
         width: 700,
         height: 500
     });
@@ -25,7 +25,6 @@ window.onload = function() {
     var rectY = stage.getHeight() / 2 - 25;
 
     var background = new Image();
-    background.src = 'images/Basic.png';
 
     //stage.add(backlayer);
 

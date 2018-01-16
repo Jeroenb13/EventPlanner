@@ -8,7 +8,7 @@ $('#plus').click(function() {
     var addedWidth = document.getElementById('width').value;
     var addedHeight = document.getElementById('height').value;
     var addedColor = document.getElementById('color').value;
-    addBox(addedWidth, addedHeight, addedColor);
+    addBox(addedWidth, addedHeight, "#d65b00");
     document.getElementById('width').value = "";
     document.getElementById('height').value = "";
 })

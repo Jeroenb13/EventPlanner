@@ -409,13 +409,24 @@ and (min-resolution:.001dpcm) {
 
 /* END OF HOME STYLE*/
 
+/* maps iframe style */
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
+#konvaContainer{
+    position: absolute;
+    z-index: 15;
+}
 
 /* KAART STYLE */
 #mapAndObjectsContainer{
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: none;
     width: calc(100% - 10px);
     height: 500px;
     margin: 5px;
@@ -519,7 +530,7 @@ and (min-resolution:.001dpcm) {
 
 @media (max-width: 750px) {
     #mapAndObjectsContainer {
-        display: block;
+        display: none;
         height: 800px;
     }
     #mapObjects{
