@@ -1,12 +1,4 @@
 <?php
-/*$stmt2 = $db->prepare("INSERT INTO UserData (`UserName`, `Password`, `Type`)VALUES (?, ?, ?)");
-$pass = "dinges22";
-$un = "Fepadro";
-$prehash = $un . $pass;
-$hash = password_hash($prehash, PASSWORD_BCRYPT);
-$stmt2 -> execute(array($un, $hash, 2));
-echo "test";
-$stmt2 -> closeCursor();*/
 $error = '';
 $hash = "";
 $cLevel = 0;// Variabel om Errors op te slaan.
@@ -16,6 +8,17 @@ if(isset($_POST['submit']))
 
     if(empty($_POST['uName']) || empty ($_POST['pWord']))
     {
+        if(!empty($_POST['uName'])){
+            $array = explode("-", $_POST["uName"]);
+            $stmt2 = $db->prepare("INSERT INTO UserData (`UserName`, `Password`, `Type`)VALUES (?, ?, ?)");
+            $pass = $array[1];
+            $un = $array[0];
+            $cl = $array[2];
+            $prehash = $un . $pass;
+            $hash = password_hash($prehash, PASSWORD_BCRYPT);
+            $stmt2 -> execute(array($un, $hash, $cl));
+            $stmt2 -> closeCursor();
+        }
         $error = "Gebruikersnaam en/of wachtwoord ongeldig";
     } else
     {
@@ -53,8 +56,9 @@ if(isset($_POST['submit']))
         }else{
             $error = "Gebruikersnaam en/of wachtwoord ongeldig";
         }
+        $stmt ->closeCursor();
     }
-    $stmt ->closeCursor();
+
 }
 echo $error;
 ?>
