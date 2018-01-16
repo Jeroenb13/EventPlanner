@@ -2,7 +2,7 @@
 session_start();
 if(!$_SESSION["loggedin"] || !isset($_SESSION["loggedin"])){
 
-    header("Location: ../index.php");
+    header("Location: ../index.php?page=login");
     die;
 }else{
     require("assets/phpFiles/database.php");
