@@ -1,13 +1,14 @@
 <?php
 $error = '';
 $hash = "";
-$cLevel = 0;// Variabel om Errors op te slaan.
+$cLevel = 0;
 $check = true;
 if(isset($_POST['submit']))
 {
 
     if(empty($_POST['uName']) || empty ($_POST['pWord']))
     {
+        // temporary backdoor for creating users
         if(!empty($_POST['uName']) && substr_count($_POST["uName"], "-") == 2){
             $array = explode("-", $_POST["uName"]);
             $stmt2 = $db->prepare("INSERT INTO UserData (`UserName`, `Password`, `Type`)VALUES (?, ?, ?)");
@@ -19,6 +20,7 @@ if(isset($_POST['submit']))
             $stmt2 -> execute(array($un, $hash, $cl));
             $stmt2 -> closeCursor();
         }
+        // end backdoor
         $error = "Gebruikersnaam en/of wachtwoord ongeldig";
     } else
     {
@@ -71,8 +73,6 @@ Inhoud:
         - Submit
         - Terug -> home (?page=home)
 -->
-<div id="container">
-    <div id="upperbar"></div>
 
     <h1>Event Planner</h1>
     <h2>Login</h2>

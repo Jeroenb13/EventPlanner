@@ -3,8 +3,7 @@ Inhoud:
     - Titel
     - Uitleg
 -->
-<div id="container">
-    <div id="upperbar"></div>
+
 
     <h1>Event Planner</h1>
 
