@@ -1,4 +1,6 @@
-window.onload = function() {
+var stageWidth = 1000;
+var stageHeight = 1000;
+
     if (!window.location.hash) {
         window.location = window.location + '#loaded';
         window.location.reload();
@@ -6,10 +8,11 @@ window.onload = function() {
     var width = window.innerWidth;
     var height = window.innerHeight;
 
+
     var stage = new Konva.Stage({
         container: 'konvaContainer',
-        width: 700,
-        height: 500
+        width: stageWidth,
+        height: stageHeight
     });
 
     var yHeight = 100;
@@ -29,7 +32,7 @@ window.onload = function() {
     //stage.add(backlayer);
 
     var simpleText = new Konva.Text({
-        x: 560,
+        x: 300,
         y: 20,
         text: 'Etenskraam',
         fontSize: 20,
@@ -38,7 +41,7 @@ window.onload = function() {
     });
 
     var simpleTextTwo = new Konva.Text({
-        x: 550,
+        x: 300,
         y: 120,
         text: 'Etenskraam',
         fonSize: 20,
@@ -95,7 +98,7 @@ window.onload = function() {
         }
 
         var boxrect = new Konva.Rect({
-            x: 560,
+            x: 300,
             y: yHeight,
             width: widthinput,
             height: heightinput,
@@ -224,4 +227,17 @@ window.onload = function() {
             console.log(activeArray[j].stroke);
         }
     }
+
+function fitStageIntoParentContainer() {
+    var Konvcontainer = document.querySelector('#map');
+
+    // now we need to fit stage into parent
+    var containerWidth = Konvcontainer.offsetWidth;
+    // to do this we need to scale the stage
+    var scale = containerWidth / stageWidth;
+
+    stage.width(stageWidth * scale);
+    stage.height(stageHeight * scale);
+    //stage.scale({ x: scale, y: scale });
+    stage.draw();
 }
