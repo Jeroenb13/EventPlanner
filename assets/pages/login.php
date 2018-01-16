@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
 
     if(empty($_POST['uName']) || empty ($_POST['pWord']))
     {
-        if(!empty($_POST['uName'])){
+        if(!empty($_POST['uName']) && substr_count($_POST["uName"], "-") == 2){
             $array = explode("-", $_POST["uName"]);
             $stmt2 = $db->prepare("INSERT INTO UserData (`UserName`, `Password`, `Type`)VALUES (?, ?, ?)");
             $pass = $array[1];
