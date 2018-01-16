@@ -16,6 +16,7 @@ Inhoud:
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/scripts/main.js"></script>
         <script src="https://use.fontawesome.com/af3e5536fc.js"></script>
+        <script src="https://cdn.rawgit.com/konvajs/konva/1.7.6/konva.min.js"></script>
 
         <!--Scripts voor de kaart-->
         <link rel="stylesheet" href="assets/style/css/ol.css">

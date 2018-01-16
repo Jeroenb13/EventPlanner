@@ -38,6 +38,17 @@
 
     <div class="spacer-100"></div>
 
+    <div id="moveBoxes">
+        <div id="boxesContainer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.76395445674024!2d14.505729650453198!3d46.051417003724126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d624cb9da29%3A0x1a51289879c2454!2sStritarjeva+ulica%2C+1000+Ljubljana%2C+Sloveni%C3%AB!5e1!3m2!1snl!2snl!4v1516017388589" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button id="rotateL">RotateLeft</button>
+            <button id="rotateR">RotateRight</button>
+            <button id="deselect">Deselect</button>
+
+            <script src="Kaart.js">
+            </script>
+        </div>
+    </div>
     <div id="mapAndObjectsContainer">
         <div id="mapObjects">
 

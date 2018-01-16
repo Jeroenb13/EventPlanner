@@ -52,7 +52,7 @@ Inhoud:
         <p class="p-margin-top">Vul hier de juiste gegevens in</p>
 
         <div id="inputForm">
-            <form method="post" action="">
+            <!-- <form method="post" action=""> -->
             <p>Categorie*:</p>
             <select class="formSelect" name="inputCat" id="inputCat">
                 <option value="bierpompen">Bierpompen</option>
@@ -167,13 +167,13 @@ Inhoud:
             <input type="radio" name="facOppervlakte" value="facVierkant"> Vierkant
             <br/><hr>
             <p>Lengte*:</p>
-            <input class="formInput" type="text" name="facLengte"> cm
+            <input class="formInput" type="text" name="facLengte" id="facLengte"> cm
             <br/><hr>
             <p>Breedte*:</p>
-            <input class="formInput" type="text" name="facBreedte"> cm
+            <input class="formInput" type="text" name="facBreedte" id="facBreedte"> cm
             <br/><hr>
             <p>Diameter*:</p>
-            <input class="formInput" type="text" name="facDiameter">
+            <input class="formInput" type="text" name="facDiameter" >
             <br/><hr>
 
             <p>Hoogte*:</p>
@@ -355,9 +355,12 @@ Inhoud:
             </div>
         </div>
 
-        <button>Opslaan</button>
 
-        </form>
+                <button id="plus">Toevoegen</button>
+                <button id="next">Opslaan</button>
+
+        <!--</form>-->
+        <script src="./assets/scripts/formulier.js"></script>
 
     </div>
     </div>

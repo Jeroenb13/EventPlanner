@@ -7,7 +7,7 @@ window.onload = function() {
     var height = window.innerHeight;
 
     var stage = new Konva.Stage({
-        container: 'container',
+        container: 'boxesContainer',
         width: 700,
         height: 500
     });
