@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION["loggedin"])){
+    $_SESSION["loggedin"] = false;
+}
 require('assets/phpFiles/database.php');
 if(isset($_GET['page']))
 {
