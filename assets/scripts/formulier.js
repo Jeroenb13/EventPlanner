@@ -3,6 +3,16 @@
  */
 
 var blockArray = [];
+var sessionArray = JSON.parse(sessionStorage.getItem("inputArray"));
+console.log(sessionArray);
+if(sessionArray === null)
+{
+
+}
+else
+{
+    sessionArray.forEach(addBoxArray);
+}
 
 $('#plus').click(function() {
     var addedWidth = document.getElementById('facBreedte').value;
@@ -10,39 +20,39 @@ $('#plus').click(function() {
     var category = document.getElementById('inputCat').value.toString();
     var addedColor;
 
-    if(category == "bierpompen")
+    if(category === "bierpompen")
     {
         addedColor = "#ffff00";
     }
-    else if(category == "eetkramen")
+    else if(category === "eetkramen")
     {
         addedColor = "#b20000";
     }
-    else if(category == "toiletten")
+    else if(category === "toiletten")
     {
         addedColor = "#006907";
     }
-    else if(category == "muntjesVerkoop")
+    else if(category === "muntjesVerkoop")
     {
         addedColor = "#8c0099";
     }
-    else if(category == "Springkussens")
+    else if(category === "Springkussens")
     {
         addedColor = "#1c2496";
     }
-    else if(category == "attracties")
+    else if(category === "attracties")
     {
         addedColor = "#8b0052";
     }
-    else if(category == "muzikant")
+    else if(category === "muzikant")
     {
         addedColor = "#098fa7";
     }
-    else if(category == "EHBO")
+    else if(category === "EHBO")
     {
         addedColor = "#8781bd";
     }
-    else if(category == "techniekSectie")
+    else if(category === "techniekSectie")
     {
         addedColor = "#d65b00";
     }
@@ -56,6 +66,11 @@ function addBox(addWidth, addHeight, addColor)
 {
     var box = {width: addWidth, height: addHeight, color: addColor};
     blockArray.push(box);
+}
+
+function addBoxArray(item, index)
+{
+    addBox(item.width, item.height, item.color);
 }
 
 $('#next').click(function()
