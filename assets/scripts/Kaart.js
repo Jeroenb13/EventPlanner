@@ -103,14 +103,13 @@ var stageHeight = 1000;
             width: widthinput,
             height: heightinput,
             fill: color,
-            stroke: 'black',
-            strokeWidth: 4,
+            strokewidth: 0,
             draggable: true,
             shadowColor: 'black',
-            shadowBlur: 10,
+            shadowBlur: 12,
             offset: {x: widthinput / 2, y: heightinput / 2},
-            shadowOffset: {x: 10, y: 10},
-            shadowOpacity: 0.5,
+            shadowOffset: {x: 4, y: 4},
+            shadowOpacity: 0.4,
             active: false,
             id: "null"
         });
@@ -166,7 +165,6 @@ var stageHeight = 1000;
 
         item.on('mousedown', function () {
             document.body.style.cursor = 'default';
-            this.stroke('red');
             this.active = true;
             console.log(this.active);
         });
@@ -223,8 +221,6 @@ var stageHeight = 1000;
     function deactivateAll(activeArray) {
         for (j = 0; j < array; j++) {
             activeArray[j].active = false;
-            activeArray[j].stroke('black');
-            console.log(activeArray[j].stroke);
         }
     }
 
