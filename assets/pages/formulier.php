@@ -5,12 +5,6 @@ Inhoud:
         - Vragen/Mogelijkheden
         - Submit per vraag/mogelijkheid
 -->
-<!--
-Inhoud:
-    - Titel
-    - Uitleg
--->
-
     <div id="page-container">
 
         <h1>Event Planner</h1>
@@ -20,19 +14,19 @@ Inhoud:
 
         <div id="inputForm">
             <!-- <form method="post" action=""> -->
-            <p>Categorie*:</p>
                 <hr>
             <p class="tooltip">Categorie*:
                 <span class="tooltiptext">Kies hier de juiste categorie waaronder uw object past.</span>
             </p>
             <select class="formSelect" name="inputCat" id="inputCat">
-                <option value="bierpompen">Bierpompen</option>
-                <option value="eetkramen">eet- en drankkramen</option>
+                <option value="null">Kies een categorie</option>
+                <option value="eetkramen">Eet- en drankkramen</option>
+                <option value="tapwagens">Tapwagens</option>
                 <option value="toiletten">Toiletten</option>
-                <option value="muntjesVerkoop">muntjes verkoopkramen</option>
+                <option value="muntjesVerkoop">Muntjes verkoopkramen</option>
                 <option value="Springkussens">Springkussens</option>
                 <option value="attracties">Attracties</option>
-                <option value="muzikant">muzikant(single, duo, band)</option>
+                <option value="muzikant">Muzikant(single, duo, band)</option>
                 <option value="EHBO">EHBO stand</option>
                 <option value="techniekSectie">Techniek sectie</option>
 

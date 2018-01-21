@@ -526,11 +526,41 @@ and (min-resolution:.001dpcm) {
     display: flex;
 }
 
-.objectDisplay{
+.objectDisplay1{
     /* FOR TESTING PURPOSES TODO: Remove */
     width: 50px;
     height: 25px;
-    background-color: blue;
+    background-color: #82ca9c;
+}
+.objectDisplay2{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 35px;
+    height: 20px;
+    background-color: #b20000;
+}
+.objectDisplay3{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 30px;
+    height: 30px;
+    background-color: #8781bd;
+}
+.objectDisplay4{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 15px;
+    height: 25px;
+    background-color: #d65b00;
+}
+.objectDisplay5{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 40px;
+    height: 15px;
+    background-color: #006907;
+}
+.objectDisplay6{
+    /* FOR TESTING PURPOSES TODO: Remove */
+    width: 25px;
+    height: 25px;
+    background-color: #8b0052;
 }
 .mapObjectDescription{
     text-align: left;
@@ -621,7 +651,7 @@ and (min-resolution:.001dpcm) {
 
 /* ONDERDELEN STYLE */
 
-.buttonOnderdeelToevoegen{
+.buttonFloatLeft{
     float: left;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -633,8 +663,9 @@ and (min-resolution:.001dpcm) {
     text-decoration: none;
     font-size: 18px;
     width: 225px;
+    margin-right: 10px;
 }
-.buttonOnderdeelToevoegen:hover{
+.buttonFloatLeft:hover{
     background-color: #1d3f62;
     cursor: pointer;
 }

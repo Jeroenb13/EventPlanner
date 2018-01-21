@@ -5,7 +5,8 @@
         <h1>Event Planner</h1>
         <h2>Onderdelen</h2>
 
-        <a href="?page=formulier"><button class="buttonOnderdeelToevoegen">+ Nieuw Object</button></a>
+        <a href="?page=formulier"><button class="buttonFloatLeft">+ Nieuw Object</button></a>
+        <a href="#"><button class="buttonFloatLeft">Plan opslaan</button></a>
 
         <div id="onderdelenTabel-OverflowFix">
             <table id="onderdelenTabel">
@@ -41,5 +42,4 @@
                 </tr>
             </table>
         </div>
-        <a href="?page=kaart"><button class="button">Verder</button></a>
     </div>

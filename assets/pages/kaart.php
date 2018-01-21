@@ -21,18 +21,18 @@
         <div id="mapObjects">
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay1">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
-                    <p class="mapObjectTitle">Podium1</p>
+                    <p class="mapObjectTitle">Mainstage</p>
                     <p class="mapObjectCategory">Podia</p>
                 </div>
             </div>
 
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay2">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
@@ -43,45 +43,45 @@
 
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay3">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
-                    <p class="mapObjectTitle">Podium1</p>
-                    <p class="mapObjectCategory">Podia</p>
+                    <p class="mapObjectTitle">EHBO1</p>
+                    <p class="mapObjectCategory">EHBO stands</p>
                 </div>
             </div>
 
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay4">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
-                    <p class="mapObjectTitle">Harry's hap</p>
-                    <p class="mapObjectCategory">Eet- en drankkramen</p>
+                    <p class="mapObjectTitle">Techniek1</p>
+                    <p class="mapObjectCategory">Technieksecties</p>
                 </div>
             </div>
 
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay5">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
-                    <p class="mapObjectTitle">Podium1</p>
-                    <p class="mapObjectCategory">Podia</p>
+                    <p class="mapObjectTitle">Toiletten1</p>
+                    <p class="mapObjectCategory">Toiletten</p>
                 </div>
             </div>
 
             <div class="mapObjectListItem">
                 <div class="mapObjectDisplayBox">
-                    <div class="objectDisplay">
+                    <div class="objectDisplay6">
                     </div>
                 </div>
                 <div class="mapObjectDescription">
-                    <p class="mapObjectTitle">Harry's hap</p>
-                    <p class="mapObjectCategory">Eet- en drankkramen</p>
+                    <p class="mapObjectTitle">Draaimolen1 </p>
+                    <p class="mapObjectCategory">Attracties</p>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@
       <div id="objectControls">
         <button id="rotateL"><i class="icon-ccw"></i></button>
         <button id="rotateR"><i class="icon-cw"></i></button>
-        <button id="deselect">Deselect</button>
+        <button id="deselect">Deselecteer</button>
       </div>
     </div>
 

@@ -20,7 +20,7 @@ $('#plus').click(function() {
     var category = document.getElementById('inputCat').value.toString();
     var addedColor;
 
-    if(category === "bierpompen")
+    if(category === "tapwagens")
     {
         addedColor = "#ffff00";
     }
