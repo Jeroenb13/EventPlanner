@@ -6,7 +6,8 @@
         <h2>Onderdelen</h2>
 
         <a href="?page=formulier"><button class="buttonFloatLeft">+ Nieuw Object</button></a>
-        <a href="#"><button class="buttonFloatLeft">Plan opslaan</button></a>
+        <!-- De href bij "Plan Opslaan" verwijst uiteindelijk naar een verwerkingspagina, deze verwerkingspagina moet de gebruiker naar dashboard of homepagina verwijzen. -->
+        <a href="/"><button class="buttonFloatLeft">Plan opslaan</button></a>
 
         <div id="onderdelenTabel-OverflowFix">
             <table id="onderdelenTabel">

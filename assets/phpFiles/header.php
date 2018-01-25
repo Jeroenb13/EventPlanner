@@ -39,8 +39,16 @@ Inhoud:
                         <a class=\"login-dropdown-a\">Profiel<i class=\"icon-pencil\"></i></a> <a class=\"login-dropdown-a\">Uitloggen<i class=\"icon-logout\"></i></a> </div>
                 </li>";
                 }
-                echo "<li><a href=\"?page=kaart\">Kaart</a></li>
-                <li><a href=\"?page=onderdelen\">Onderdelen</a></li>
+                echo "<li><a";
+                if($page != "basisgegevens"){
+                    echo " href='?page=kaart'";
+                }
+                echo ">Kaart</a></li>
+                <li><a";
+                if($page != "basisgegevens"){
+                    echo " href='?page=onderdelen'";
+                }
+                echo ">Onderdelen</a></li>
                 <li><a href=\"?page=basisgegevens\">Basisgegevens</a></li>
             </ul>
         </div>
@@ -48,9 +56,17 @@ Inhoud:
             <ul>
                 <li><a href=\"?page=basisgegevens\">Basisgegevens</a></li>
                 <div class=\"nav-divider\"></div>
-                <li><a href=\"?page=onderdelen\">Onderdelen</a></li>
+                <li><a";
+                if($page != "basisgegevens"){
+                    echo " href='?page=onderdelen'";
+                }
+                echo ">Onderdelen</a></li>
                 <div class=\"nav-divider\"></div>
-                <li><a href=\"?page=kaart\">Kaart</a></li>
+                <li><a";
+                if($page != "basisgegevens"){
+                    echo " href='?page=kaart'";
+                }
+                echo ">Kaart</a></li>
                 <div class=\"nav-divider\"></div>";
                 if($_SESSION["loggedin"]) {
                     echo "<li class=\"nav-overlay-user-li\">

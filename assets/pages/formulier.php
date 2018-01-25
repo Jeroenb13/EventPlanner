@@ -312,7 +312,7 @@ Inhoud:
 
 
                 <button id="plus">Toevoegen</button>
-                <button id="next">Opslaan</button>
+            <a href="?page=kaart"><button id="next">Opslaan</button></a>
 
         <script src="./assets/scripts/formulier.js"></script>
 
